@@ -3,3 +3,4 @@ description: Aspiring data nerd
 show_downloads: false
 google_analytics: UA-99295144-1
 theme: jekyll-theme-midnight
+permalink: /blog/:year/:month/:day/:title
