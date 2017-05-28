@@ -1,5 +1,5 @@
-title: Midnight theme
-description: Midnight is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
-theme: 
+title: Alex's Datablog
+description: Aspiring data nerd
+show_downloads: false
+google_analytics: UA-99295144-1
+theme: jekyll-theme-midnight
