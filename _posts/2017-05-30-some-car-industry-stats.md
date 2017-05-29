@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Australian Car industry"
+title:  "Australian Car Industry"
 date:   2017-05-30 16:16:01 -0600
 categories: car industry visualisation tableau
 ---
