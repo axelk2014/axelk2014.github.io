@@ -2,7 +2,8 @@
 layout: post
 title:  "Australian Car Industry - some charts"
 date:   2017-05-30 16:16:01 -0600
-categories: car industry visualisation tableau
+tags: car industry, visualisation, tableau
+description: Some visualisations of ABS car industry data 
 ---
 
 Some sample graphs created in Tableau from 931401.xls (ABS dataset on Austalian Motor Car Sales - April 2017)

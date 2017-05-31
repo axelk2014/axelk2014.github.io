@@ -2,7 +2,8 @@
 layout: post
 title:  "A walk in the park"
 date:   2017-05-28 16:16:01 -0600
-categories: afl visualisation
+tags: afl, visualisation
+description: A two python notebook analysis and visualisation of AFL and sporting data. 
 ---
 A two python notebook analysis on AFL and sporting data. This analysis looks at publicly available data to see if there is a correlation between location, weather and team performance.
 
