@@ -23,9 +23,8 @@ layout: default
   <div class="post-meta">
   <div class="post-time">
     <i class="fa fa-calendar"></i>
-    <p>
     <time datetime='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date_to_string }}</time>
-    </p
+    <br><br>
   </div>
 
 </div>
