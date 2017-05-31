@@ -10,23 +10,27 @@ layout: default
     </a>
   </h2>
 
-  <div class="post-meta">
-  <div class="post-time">
-    <i class="fa fa-calendar"></i>
-    <time datetime='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date_to_string }}</time>
+  <div class="post-descr">
+    <p>
+      Description: {{ post.description }}
+    </p>
   </div>
+
   <ul id="tags">
     {% for tag in post.tags %}
     <li><a href="{{site.baseurl | prepend:site.url}}/tag/{{ tag }}">{{ tag }}</a>,</li>
     {% endfor %}
   </ul>
+
+  <div class="post-meta">
+  <div class="post-time">
+    <i class="fa fa-calendar"></i>
+    <time datetime='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date_to_string }}</time>
+  </div>
+
 </div>
 
-  <div class="post-descr">
-    <p>
-      {{ post.description }}
-    </p>
-  </div>
+
   {% endfor %}
 
 
