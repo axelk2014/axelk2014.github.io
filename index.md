@@ -11,9 +11,7 @@ layout: default
   </h2>
 
   <div class="post-descr">
-    <p>
       Description: {{ post.description }}
-    </p>
   </div>
 
   <ul id="tags">
@@ -25,7 +23,9 @@ layout: default
   <div class="post-meta">
   <div class="post-time">
     <i class="fa fa-calendar"></i>
+    <p>
     <time datetime='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date_to_string }}</time>
+    </p
   </div>
 
 </div>
