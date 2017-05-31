@@ -16,7 +16,8 @@ layout: default
 
   <ul id="tags">
     {% for tag in post.tags %}
-    <li><a href="{{site.baseurl | prepend:site.url}}/tag/{{ tag }}">{{ tag }}</a>,</li>
+    <!--<li><a href="{{site.baseurl | prepend:site.url}}/tag/{{ tag }}">{{ tag }}</a>|</li> -->
+    <li >{{ tag }}|</li>
     {% endfor %}
   </ul>
 
