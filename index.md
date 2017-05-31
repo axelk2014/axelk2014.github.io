@@ -15,9 +15,9 @@ layout: default
     <i class="fa fa-calendar"></i>
     <time datetime='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date_to_string }}</time>
   </div>
-  <ul>
+  <ul id="tags">
     {% for tag in post.tags %}
-    <li><a href="{{site.baseurl | prepend:site.url}}/tag/{{ tag }}">{{ tag }}</a></li>
+    <li><a href="{{site.baseurl | prepend:site.url}}/tag/{{ tag }}">{{ tag }}</a>,</li>
     {% endfor %}
   </ul>
 </div>

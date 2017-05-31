@@ -2,7 +2,7 @@
 layout: post
 title:  "The Weather -- (work in progress)"
 date:   2017-05-26 16:16:01 -0600
-tags: weather, visualisation, ggplot
+tags: weather visualisation ggplot
 description: An investigation on the accuracy of BOM forecasts
 ---
 
