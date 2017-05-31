@@ -13,10 +13,8 @@ Method: Scrape the 6 day forecast from the bom every day for a period of time (a
 
 | Downloaded from | URL         | Datetime |
 |:-------------|:------------------|:------|
-| BOM        |
-[http://www.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=123&p_display_type=dailyDataFile&p_startYear=&p_c=&p_stn_num=086338](http://www.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=123&p_display_type=dailyDataFile&p_startYear=&p_c=&p_stn_num=086338)
+| BOM          | [http://www.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=123&p_display_type=dailyDataFile&p_startYear=&p_c=&p_stn_num=086338](http://www.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=123&p_display_type=dailyDataFile&p_startYear=&p_c=&p_stn_num=086338)
 |  every day  |
-
 
 
 ### Melbourne - Forecast Day 1 vs actuals
@@ -24,4 +22,4 @@ Method: Scrape the 6 day forecast from the bom every day for a period of time (a
 ![Melbourne_day1]({{ site.baseurl | prepend:site.url}}/img/melbourne_Day-1_forecast_2016-12-30.png){: .center-image }**Figure 1:** Time series graph   [1200x873 461K]
 
 ### Melbourne - Forecast Day 6 vs actuals
-![Time series]({{ site.baseurl | prepend:site.url}}/img/melbourne_Day-1_forecast_2016-12-30.png){: .center-image }**Figure 2:** Time series graph   [1200x873 461K]
+![Time series]({{ site.baseurl | prepend:site.url}}/img/melbourne_Day-6_forecast_2016-12-30.png){: .center-image }**Figure 2:** Time series graph   [1200x873 461K]
