@@ -60,6 +60,16 @@ a {
   }
 }
 
+a.heading {
+  color:#ffffff;
+  font-weight:400;
+  text-decoration:none;
+
+  &:hover {
+    color: #00ccff;
+  }
+}
+
 a small {
   font-size:11px;
   color:#666;
