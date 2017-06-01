@@ -34,8 +34,8 @@ layout: default
   {% endfor %}
 
 
-<div class="post-footer">
+<!--<div class="post-footer">
   <div class="column-full">
     <h3><a href="{{ '/archive.html' | prepend: site.baseurl | prepend: site.url }}">Blog archive</a></h3>
   </div>
-</div>
+</div>-->
