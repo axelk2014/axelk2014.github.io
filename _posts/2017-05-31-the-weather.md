@@ -59,7 +59,7 @@ For each chart below:
 
 | City | Link         | Dimensions |
 |:-------------|:------------------|:------|
-| Adelaide | ![https://axelk2014.github.io/img/adelaide_anim_tn.png](https://axelk2014.github.io/img/adelaide_anim.gif){: .center-image } | 1024x745 GIF 512k|
+| Adelaide | [![Adelaide](https://axelk2014.github.io/img/adelaide_anim_tn.png)](https://axelk2014.github.io/img/adelaide_anim.gif){: .center-image } | 1024x745 GIF 512k|
 | Brisbane | ![Brisbane](https://axelk2014.github.io/img/brisbane_anim.gif){: .center-image } | 1024x745 GIF 342k|
 | Darwin | ![Darwin](https://axelk2014.github.io/img/darwin_anim.gif){: .center-image } | 1024x745 GIF 184k|
 | Hobart | ![Hobart](https://axelk2014.github.io/img/hobart_anim.gif){: .center-image } | 1024x745 GIF 441k|
