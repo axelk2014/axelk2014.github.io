@@ -6,7 +6,7 @@ tags: weather visualisation ggplot
 description: An investigation on the accuracy of BOM forecasts
 ---
 
-Work in progress - post continually update.
+Work in progress - post continually updates.
 
 To answer the question: How accurate is the weather forecast 6 days out?
 
@@ -37,7 +37,7 @@ Method: Scrape the 6 day forecast from bom.gov.au every day for a period of time
 | BOM          |	[http://www.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=136&p_display_type=dailyDataFile&p_startYear=&p_c=&p_stn_num=066062](http://www.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=136&p_display_type=dailyDataFile&p_startYear=&p_c=&p_stn_num=066062)	|  every day  |
 
 
-### Visualisations
+## Visualisations
 
 Initially on this project, I used the defaults for ggplot charts:
 
@@ -59,13 +59,13 @@ For each chart below:
 
 | City | Link         | Dimensions |
 |:-------------|:------------------|:------|
-| Adelaide | ![Adelaide](https://axelk2014.github.io/img/adelaide_anim_tn.png){: .center-image } | 1024x745 GIF 512k|
-| Brisbane | ![Brisbane](https://axelk2014.github.io/img/brisbane_anim_tn.png){: .center-image } | 1024x745 GIF 342k|
-| Darwin | ![Darwin](https://axelk2014.github.io/img/darwin_anim_tn.png){: .center-image } | 1024x745 GIF 184k|
-| Hobart | ![Hobart](https://axelk2014.github.io/img/hobart_anim_tn.png){: .center-image } | 1024x745 GIF 441k|
-| Melbourne | ![Melbourne](https://axelk2014.github.io/img/melbourne_anim_tn.png){: .center-image } | 1024x745 GIF 498k|
-| Perth | ![Perth](https://axelk2014.github.io/img/perth_anim_tn.png){: .center-image } | 1024x745 GIF 480k|
-| Sydney | ![Sydney](https://axelk2014.github.io/img/sydney_anim_tn.png){: .center-image } | 1024x745 GIF 412k|
+| Adelaide | ![Adelaide](https://axelk2014.github.io/img/adelaide_anim_tn.png)(https://axelk2014.github.io/img/adelaide_anim.gif "Adelaide"){: .center-image } | 1024x745 GIF 512k|
+| Brisbane | ![Brisbane](https://axelk2014.github.io/img/brisbane_anim.gif){: .center-image } | 1024x745 GIF 342k|
+| Darwin | ![Darwin](https://axelk2014.github.io/img/darwin_anim.gif){: .center-image } | 1024x745 GIF 184k|
+| Hobart | ![Hobart](https://axelk2014.github.io/img/hobart_anim.gif){: .center-image } | 1024x745 GIF 441k|
+| Melbourne | ![Melbourne](https://axelk2014.github.io/img/melbourne_anim.gif){: .center-image } | 1024x745 GIF 498k|
+| Perth | ![Perth](https://axelk2014.github.io/img/perth_anim.gif){: .center-image } | 1024x745 GIF 480k|
+| Sydney | ![Sydney](https://axelk2014.github.io/img/sydney_anim.gif){: .center-image } | 1024x745 GIF 412k|
 
 
 #### TODO
