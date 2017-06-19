@@ -1,18 +1,18 @@
 ---
 layout: post
 title:  "The Weather -- (work in progress)"
-date:   2017-05-26 16:16:01 -0600
+date:   2017-06-19 16:16:01 -0600
 tags: weather visualisation ggplot
 description: An investigation on the accuracy of BOM forecasts
 ---
 
-Work in progress - post to be updated.
+Work in progress - post continually update.
 
 To answer the question: How accurate is the weather forecast 6 days out?
 
-Method: Scrape the 6 day forecast from the bom every day for a period of time (a year?) then analyse using various statistical tools to see how accurate their forecast is.
+Method: Scrape the 6 day forecast from bom.gov.au every day for a period of time (a year?) then analyse using various statistical tools to see how accurate their forecast is.
 
-| Downloaded from | URL         | Datetime |
+| Source | URL         | Datetime |
 |:-------------|:------------------|:------|
 | BOM          | [http://www.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=123&p_display_type=dailyDataFile&p_startYear=&p_c=&p_stn_num=086338](http://www.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=123&p_display_type=dailyDataFile&p_startYear=&p_c=&p_stn_num=086338)|  every day  |
 | BOM          |	[http://www.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=123&p_display_type=dailyDataFile&p_startYear=&p_c=&p_stn_num=086338](http://www.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=123&p_display_type=dailyDataFile&p_startYear=&p_c=&p_stn_num=086338)	|  every day  |
@@ -37,15 +37,37 @@ Method: Scrape the 6 day forecast from the bom every day for a period of time (a
 | BOM          |	[http://www.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=136&p_display_type=dailyDataFile&p_startYear=&p_c=&p_stn_num=066062](http://www.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=136&p_display_type=dailyDataFile&p_startYear=&p_c=&p_stn_num=066062)	|  every day  |
 
 
+### Visualisations
 
-### Melbourne - Forecast Day 1 vs actuals
+Initially on this project, I used the defaults for ggplot charts:
 
-![Melbourne_day1]({{ site.baseurl | prepend:site.url}}/img/melbourne_Day-1_forecast_2016-12-30.png){: .center-image }**Figure 1:** Time series graph - Day 1 forecast     [1200x873 461K]
+The lighter background makes it more difficult to see the contrast between the thin lines (forecast data) with the ribbon (actual data). Specifically, the feature of interest in the chart is the overlap (and lack of overlap) between the ribbon and the lines.
 
-### Melbourne - Forecast Day 6 vs actuals
-![Time series]({{ site.baseurl | prepend:site.url}}/img/melbourne_Day-6_forecast_2016-12-30.png){: .center-image }**Figure 2:** Time series graph  - Day 6 forecast   [1200x873 461K]
+![adelaide_day1]({{ site.baseurl | prepend:site.url}}/img/adelaide_Day-5_forecast_2017-06-12_zoomed.png)
+
+So once the problem of the visualisation is identified, it was easier to explore options to overcome it. I landed on a dark background with bright lines, and decreased the opacity to 70%, which makes it easy to identify the difference between the forecast and the actual data.
+
+![adelaide_day2]({{ site.baseurl | prepend:site.url}}/img/adelaide_Day-2_forecast_2017-06-18_chart.png)
+
+However the chart only provides a limited understanding of how different (or inaccurate) the forecast is from the actual data. The interest for this visualisation is to see how the forecast improves (or not) as the forecasted day approaches. To do this, an animated view of the forecasted data vs the actual data will show how how the forecast data converges to actual.
+
+#### Animations
+
+For each chart below:
+- Long dashed line in blue showing the date of the maximum temperature range (actual)
+- short dashed line (coloured by day) showing the date of the maximum temperature range (forecast)  
+
+| City | Link         | Dimensions |
+|:-------------|:------------------|:------|
+| Adelaide | ![Adelaide](https://axelk2014.github.io/img/adelaide_anim_tn.png){: .center-image } | 1024x745 GIF 512k|
+| Brisbane | ![Brisbane](https://axelk2014.github.io/img/brisbane_anim_tn.png){: .center-image } | 1024x745 GIF 342k|
+| Darwin | ![Darwin](https://axelk2014.github.io/img/darwin_anim_tn.png){: .center-image } | 1024x745 GIF 184k|
+| Hobart | ![Hobart](https://axelk2014.github.io/img/hobart_anim_tn.png){: .center-image } | 1024x745 GIF 441k|
+| Melbourne | ![Melbourne](https://axelk2014.github.io/img/melbourne_anim_tn.png){: .center-image } | 1024x745 GIF 498k|
+| Perth | ![Perth](https://axelk2014.github.io/img/perth_anim_tn.png){: .center-image } | 1024x745 GIF 480k|
+| Sydney | ![Sydney](https://axelk2014.github.io/img/sydney_anim_tn.png){: .center-image } | 1024x745 GIF 412k|
+
 
 #### TODO
-1. Create animated city forecast to be able to see changes across time.
-2. Analyse data to calculate accuracy
-3. ...
+1. Visualise the data across cities
+2. Create a visualisation for rainfall forecast vs rainfall actual
