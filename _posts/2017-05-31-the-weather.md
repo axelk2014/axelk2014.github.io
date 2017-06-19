@@ -51,7 +51,7 @@ So once the problem of the visualisation is identified, it was easier to explore
 
 However the chart only provides a limited understanding of how different (or inaccurate) the forecast is from the actual data. The interest for this visualisation is to see how the forecast improves (or not) as the forecasted day approaches. To do this, an animated view of the forecasted data vs the actual data will show how how the forecast data converges to actual.
 
-#### Animations
+### Animations
 
 For each chart below:
 - Long dashed line in blue showing the date of the maximum temperature range (actual)
@@ -60,14 +60,15 @@ For each chart below:
 | City | Link         | Dimensions |
 |:-------------|:------------------|:------|
 | Adelaide | [![Adelaide](https://axelk2014.github.io/img/adelaide_anim_tn.png)](https://axelk2014.github.io/img/adelaide_anim.gif){: .center-image } | 1024x745 GIF 512k|
-| Brisbane | ![Brisbane](https://axelk2014.github.io/img/brisbane_anim.gif){: .center-image } | 1024x745 GIF 342k|
-| Darwin | ![Darwin](https://axelk2014.github.io/img/darwin_anim.gif){: .center-image } | 1024x745 GIF 184k|
-| Hobart | ![Hobart](https://axelk2014.github.io/img/hobart_anim.gif){: .center-image } | 1024x745 GIF 441k|
-| Melbourne | ![Melbourne](https://axelk2014.github.io/img/melbourne_anim.gif){: .center-image } | 1024x745 GIF 498k|
-| Perth | ![Perth](https://axelk2014.github.io/img/perth_anim.gif){: .center-image } | 1024x745 GIF 480k|
-| Sydney | ![Sydney](https://axelk2014.github.io/img/sydney_anim.gif){: .center-image } | 1024x745 GIF 412k|
+| Brisbane | [![Brisbane](https://axelk2014.github.io/img/brisbane_anim_tn.png)](https://axelk2014.github.io/img/brisbane_anim.gif){: .center-image } | 1024x745 GIF 342k|
+| Darwin | [![Darwin](https://axelk2014.github.io/img/darwin_anim_tn.png)](https://axelk2014.github.io/img/darwin_anim.gif){: .center-image } | 1024x745 GIF 184k|
+| Hobart | [![Hobart](https://axelk2014.github.io/img/hobart_anim_tn.png)](https://axelk2014.github.io/img/hobart_anim.gif){: .center-image } | 1024x745 GIF 441k|
+| Melbourne | [![Melbourne](https://axelk2014.github.io/img/melbourne_anim_tn.png)](https://axelk2014.github.io/img/melbourne_anim.gif){: .center-image } | 1024x745 GIF 498k|
+| Perth | [![Perth](https://axelk2014.github.io/img/perth_anim_tn.png)](https://axelk2014.github.io/img/perth_anim.gif){: .center-image } | 1024x745 GIF 480k|
+| Sydney | [![Sydney](https://axelk2014.github.io/img/sydney_anim_tn.png)](https://axelk2014.github.io/img/sydney_anim.gif){: .center-image } | 1024x745 GIF 412k|
 
+---
 
-#### TODO
+### TODO
 1. Visualise the data across cities
 2. Create a visualisation for rainfall forecast vs rainfall actual
