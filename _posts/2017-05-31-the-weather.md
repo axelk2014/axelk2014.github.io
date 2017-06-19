@@ -67,8 +67,11 @@ For each chart below:
 | Perth | [![Perth](https://axelk2014.github.io/img/perth_anim_tn.png)](https://axelk2014.github.io/img/perth_anim.gif){: .center-image } | 1024x745 GIF 480k|
 | Sydney | [![Sydney](https://axelk2014.github.io/img/sydney_anim_tn.png)](https://axelk2014.github.io/img/sydney_anim.gif){: .center-image } | 1024x745 GIF 412k|
 
+
+
+
 ---
 
 ### TODO
-1. Visualise the data across cities
+1. Visualise the characteristics of data by city 
 2. Create a visualisation for rainfall forecast vs rainfall actual
