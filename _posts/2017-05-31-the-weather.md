@@ -2,7 +2,7 @@
 layout: post
 title:  "The Weather -- (work in progress)"
 date:   2017-06-19 16:16:01 -0600
-tags: weather visualisation ggplot
+tags: weather visualisation bash R ggplot
 description: An investigation on the accuracy of BOM forecasts
 ---
 
@@ -10,7 +10,7 @@ Work in progress - post continually updates.
 
 To answer the question: How accurate is the weather forecast 6 days out?
 
-Method: Scrape the 6 day forecast from bom.gov.au every day for a period of time (a year?) then analyse using various statistical tools to see how accurate their forecast is.
+Method: Scrape the 6 day forecast from bom.gov.au every day for a period of time (a year?) then compare with actuals (also downloaded from the BOM) and analyse using various statistical tools to see how accurate their forecast is.
 
 | Source | URL         | Datetime |
 |:-------------|:------------------|:------|
@@ -37,7 +37,7 @@ Method: Scrape the 6 day forecast from bom.gov.au every day for a period of time
 | BOM          |	[http://www.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=136&p_display_type=dailyDataFile&p_startYear=&p_c=&p_stn_num=066062](http://www.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=136&p_display_type=dailyDataFile&p_startYear=&p_c=&p_stn_num=066062)	|  every day  |
 
 
-## Visualisations
+## Full temperature record
 
 Initially on this project, I used the defaults for ggplot charts:
 
@@ -68,10 +68,26 @@ For each chart below:
 | Sydney | [![Sydney](https://axelk2014.github.io/img/sydney_anim_tn.png)](https://axelk2014.github.io/img/sydney_anim.gif){: .center-image } | 1024x745 GIF 412k|
 
 
+## City based forecast
 
+Looking at each city actual and forecast data, exactly how different is the forecast from the actual.
+
+As data is supplied with minimum and maximum temperature, let's examine them separately.
+
+To evaluate and compare, I created a side by side comparison. The "interest" of the chart is to see how each forecasted day compares to each other as well as the actual data.
+
+Using the same colour schemes above, for aesthetic reasons only, I created the following:
+| Type | Link         | Dimensions |
+|:-------------|:------------------|:------|
+| Maximum | [![Adelaide](https://axelk2014.github.io/img/total-maximum_tn.png)](https://axelk2014.github.io/img/total-maximum.png){: .center-image } | 1024x745 PNG 133k|
+| Minimum | [![Brisbane](https://axelk2014.github.io/img/total-minimum_tn.png)](https://axelk2014.github.io/img/total-minimum.png){: .center-image } | 1024x745 PNG 128k|
+
+
+<br>
+<br>
 
 ---
 
 ### TODO
-1. Visualise the characteristics of data by city 
+1. Visualise the characteristics of data by city
 2. Create a visualisation for rainfall forecast vs rainfall actual
