@@ -77,9 +77,10 @@ As data is supplied with minimum and maximum temperature, let's examine them sep
 To evaluate and compare, I created a side by side comparison. The "interest" of the chart is to see how each forecasted day compares to each other as well as the actual data.
 
 Using the same colour schemes above, for aesthetic reasons only, I created the following:
-| Type | Link         | Dimensions |
+
+| Type | Thumbnail link        | Dimensions |
 |:-------------|:------------------|:------|
-| Maximum | [![Adelaide](https://axelk2014.github.io/img/total-maximum_tn.png)](https://axelk2014.github.io/img/total-maximum.png){: .center-image } | 1024x745 PNG 133k|
+| Maximum | [![Total](https://axelk2014.github.io/img/total-maximum_tn.png)](https://axelk2014.github.io/img/total-maximum.png){: .center-image } | 1024x745 PNG 133k|
 | Minimum | [![Brisbane](https://axelk2014.github.io/img/total-minimum_tn.png)](https://axelk2014.github.io/img/total-minimum.png){: .center-image } | 1024x745 PNG 128k|
 
 
