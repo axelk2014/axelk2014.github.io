@@ -92,11 +92,15 @@ And if I changed the boxplot line colours by forecasted day, you lose not only t
 
 Compare them here:
 
+| White lines/dark background | Coloured lines dark background |
+|:-------------|:------------------|
+|[![whitelines](https://axelk2014.github.io/img/total-minimum-dark.png](https://axelk2014.github.io/img/total-minimum-dark.png){: .center-image } | [![colourelines](https://axelk2014.github.io/img/total-minimum-dark.png](https://axelk2014.github.io/img/total-minimum-dark.png){: .center-image } |
+
+
 <br>
 <br>
 
 ---
 
 ### TODO
-1. Visualise the characteristics of data by city
-2. Create a visualisation for rainfall forecast vs rainfall actual
+1. Create a visualisation for rainfall forecast vs rainfall actual
