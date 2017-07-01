@@ -36,6 +36,7 @@ Method: Scrape the 6 day forecast from bom.gov.au every day for a period of time
 | BOM          |	[http://www.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=123&p_display_type=dailyDataFile&p_startYear=&p_c=&p_stn_num=066062](http://www.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=123&p_display_type=dailyDataFile&p_startYear=&p_c=&p_stn_num=066062)	|  every day  |
 | BOM          |	[http://www.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=136&p_display_type=dailyDataFile&p_startYear=&p_c=&p_stn_num=066062](http://www.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=136&p_display_type=dailyDataFile&p_startYear=&p_c=&p_stn_num=066062)	|  every day  |
 
+<br>
 
 ## Full temperature record
 
@@ -68,7 +69,7 @@ For each chart below:
 | Perth | [![Perth](https://axelk2014.github.io/img/perth_anim_tn.png)](https://axelk2014.github.io/img/perth_anim.gif){: .center-image } | 1024x745 GIF 480k|
 | Sydney | [![Sydney](https://axelk2014.github.io/img/sydney_anim_tn.png)](https://axelk2014.github.io/img/sydney_anim.gif){: .center-image } | 1024x745 GIF 412k|
 
-
+<br>
 ## City based forecast
 
 Looking at each city actual and forecast data, exactly how different is the forecast from the actual.
@@ -92,7 +93,7 @@ And if I changed the boxplot line colours by forecasted day, you lose not only t
 
 Compare them here:
 
-| White lines/dark background | Coloured lines dark background |
+| White lines/dark background | Coloured lines/dark background |
 |:-------------|:------------------|
 |[![whitelines](https://axelk2014.github.io/img/total-minimum-dark.png)](https://axelk2014.github.io/img/total-minimum-dark.png){: .center-image } | [![colourelines](https://axelk2014.github.io/img/total-minimum-darkv2.png)](https://axelk2014.github.io/img/total-minimum-darkv2.png){: .center-image } |
 
