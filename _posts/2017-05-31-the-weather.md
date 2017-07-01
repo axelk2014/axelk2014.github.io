@@ -94,7 +94,7 @@ Compare them here:
 
 | White lines/dark background | Coloured lines dark background |
 |:-------------|:------------------|
-|[![whitelines](https://axelk2014.github.io/img/total-minimum-dark.png](https://axelk2014.github.io/img/total-minimum-dark.png){: .center-image } | [![colourelines](https://axelk2014.github.io/img/total-minimum-dark.png](https://axelk2014.github.io/img/total-minimum-dark.png){: .center-image } |
+|[![whitelines](https://axelk2014.github.io/img/total-minimum-dark.png)](https://axelk2014.github.io/img/total-minimum-dark.png){: .center-image } | [![colourelines](https://axelk2014.github.io/img/total-minimum-darkv2.png)](https://axelk2014.github.io/img/total-minimum-darkv2.png){: .center-image } |
 
 
 <br>
