@@ -54,6 +54,7 @@ However the chart only provides a limited understanding of how different (or ina
 ### Animations
 
 For each chart below:
+- Each animation shows the forecasted day range (thin coloured line counting down from 6 day forecast to 5 day forecast, etc.. until 1 day forecast.
 - Long dashed line in blue showing the date of the maximum temperature range (actual)
 - short dashed line (coloured by day) showing the date of the maximum temperature range (forecast)  
 
@@ -83,6 +84,13 @@ Using the same colour schemes above, for aesthetic reasons only, I created the f
 | Maximum | [![Total](https://axelk2014.github.io/img/total-maximum_tn.png)](https://axelk2014.github.io/img/total-maximum.png){: .center-image } | 1024x745 PNG 133k|
 | Minimum | [![Brisbane](https://axelk2014.github.io/img/total-minimum_tn.png)](https://axelk2014.github.io/img/total-minimum.png){: .center-image } | 1024x745 PNG 128k|
 
+***Note on colours***
+
+With comparative boxplots, the primary interest is the thick "median" line. When you reverse the colours and the boxplot is drawn with white lines on a darker background, the 'contrast' seems less than dark lines on a lighter background.
+
+And if I changed the boxplot line colours by forecasted day, you lose not only the number label for the median, but subconsciously imply there is a difference between each boxplot (ignoring the values). The boxplots all measure the exact same thing, so coding the colours of the day to each boxplot does not add any information to the chart.
+
+Compare them here:
 
 <br>
 <br>
