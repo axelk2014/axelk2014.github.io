@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans|Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|Roboto:300|News+Cycle');
 @import "normalize";
 @import "fonts";
 @import "rouge-base16-dark.scss";
@@ -32,6 +32,7 @@ h1, h2, h3 {
 
 h1 {
   font-size:28px;
+  font-family: "News Cycle",sans-serif;
 }
 
 h2 {

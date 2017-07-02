@@ -57,7 +57,7 @@ However the chart only provides a limited understanding of how different (or ina
 For each chart below:
 - Each animation shows the forecasted day range (thin coloured line counting down from 6 day forecast to 5 day forecast, etc.. until 1 day forecast.
 - Long dashed line in blue showing the date of the maximum temperature range (actual)
-- short dashed line (coloured by day) showing the date of the maximum temperature range (forecast)  
+- Short dashed line (coloured by day) showing the date of the maximum temperature range (forecast)  
 
 | City | Link         | Dimensions |
 |:-------------|:------------------|:------|
