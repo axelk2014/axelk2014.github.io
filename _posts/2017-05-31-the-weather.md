@@ -89,13 +89,13 @@ Using the same colour schemes above, for aesthetic reasons only, I created the f
 
 With comparative boxplots, the primary interest is the thick "median" line. When you reverse the colours and the boxplot is drawn with white lines on a darker background, the 'contrast' seems less than dark lines on a lighter background.
 
-And if I changed the boxplot line colours by forecasted day, you lose not only the number label for the median, but subconsciously imply there is a difference between each boxplot (ignoring the values). The boxplots all measure the exact same thing, so coding the colours of the day to each boxplot does not add any information to the chart.
+And if I changed the boxplot line colours by forecasted day, you lose not only the number label for the median, but imply there is a difference between each boxplot (ignoring the values). The boxplots all measure the exact same thing, so coding the colours of the day to each boxplot does not add any information to the chart.
 
 Compare them here:
 
 | White lines/dark background | Coloured lines/dark background |
 |:-------------|:------------------|
-|[![whitelines](https://axelk2014.github.io/img/total-minimum-dark.png)](https://axelk2014.github.io/img/total-minimum-dark.png){: .center-image } | [![colourelines](https://axelk2014.github.io/img/total-minimum-darkv2.png)](https://axelk2014.github.io/img/total-minimum-darkv2.png){: .center-image } |
+|[![whitelines](https://axelk2014.github.io/img/total-minimum-dark.png)](https://axelk2014.github.io/img/total-minimum-dark_colouredlines.png){: .center-image } | [![colourelines](https://axelk2014.github.io/img/total-minimum-darkv2.png)](https://axelk2014.github.io/img/total-minimum-dark_colouredlines.png){: .center-image } |
 
 
 <br>
