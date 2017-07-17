@@ -28,4 +28,4 @@ Some sample graphs created in Tableau from 931401.xls (ABS dataset on Austalian 
 ![Time series]({{ site.baseurl | prepend:site.url}}/img/SUVsales.png){: .center-image }**Figure 4:** time series- Sports Utility Vehicle Sales (1994-2016)  [1000x638 160K]
 
 ### Seasonal decomposition
-![Time series]({{ site.baseurl | prepend:site.url}}/img/Totalsales-grouped.pngg){: .center-image }**Figure 5:** Seasonal decomposition - Total vehicle sales (with SUV and Passenger cars) (1994-2016)  [1024x747 213K]
+![Time series]({{ site.baseurl | prepend:site.url}}/img/Totalsales-grouped.png){: .center-image }**Figure 5:** Seasonal decomposition - Total vehicle sales (with SUV and Passenger cars) (1994-2016)  [1024x747 213K]
