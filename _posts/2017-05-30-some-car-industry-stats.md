@@ -2,7 +2,7 @@
 layout: post
 title:  "Australian Car Industry - some charts"
 date:   2017-05-30 16:16:01 -0600
-tags: car-industry visualisation tableau
+tags: car-industry visualisation tableau R ggplot time-series
 description: Some visualisations of ABS car industry data
 ---
 
@@ -26,3 +26,6 @@ Some sample graphs created in Tableau from 931401.xls (ABS dataset on Austalian 
 
 ### Total SUV Sales
 ![Time series]({{ site.baseurl | prepend:site.url}}/img/SUVsales.png){: .center-image }**Figure 4:** time series- Sports Utility Vehicle Sales (1994-2016)  [1000x638 160K]
+
+### Seasonal decomposition
+![Time series]({{ site.baseurl | prepend:site.url}}/img/Totalsales-grouped.pngg){: .center-image }**Figure 5:** Seasonal decomposition - Total vehicle sales (with SUV and Passenger cars) (1994-2016)  [1024x747 213K]
