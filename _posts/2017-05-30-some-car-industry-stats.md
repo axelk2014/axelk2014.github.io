@@ -6,26 +6,24 @@ tags: car-industry visualisation tableau R ggplot time-series
 description: Some visualisations of ABS car industry data
 ---
 
-Some sample graphs created in Tableau from 931401.xls (ABS dataset on Austalian Motor Car Sales - April 2017)
+Some sample graphs created in Tableau from 931401.xls (ABS dataset on Austalian Motor Car Sales - April 2017 - non seasonally adjusted data)
 
 | Source | URL         | Datetime |
 |:-------------|:------------------|:------|
 | ABS          | [http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/9314.0April%202017?OpenDocument](http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/9314.0April%202017?OpenDocument) |  2017-05-24 11:44am  |
 
 
-(non seasonally adjusted data)
+### Seasonal decomposition
+![Time series]({{ site.baseurl | prepend:site.url}}/img/Totalsales-grouped.png){: .center-image }<b>Figure 1:</b> Seasonal decomposition - Total vehicle sales (with SUV and Passenger cars) (1994-2016)  [1024x747 213K]
 
 ### Total Sales - stacked
-![stacked bar chart]({{ site.baseurl | prepend:site.url}}/img/SalesNewMotorVehicles_AU.png){: .center-image }**Figure 1:** stacked bar chart - Australian Motor Vehicle Sales (1994-2017)   [8759x1000 1.3MB]
+![stacked bar chart]({{ site.baseurl | prepend:site.url}}/img/SalesNewMotorVehicles_AU.png){: .center-image }<b>Figure 2:</b> stacked bar chart - Australian Motor Vehicle Sales (1994-2017)   [8759x1000 1.3MB]
 
 ### Total Sales
-![Time series]({{ site.baseurl | prepend:site.url}}/img/Totalsales.png){: .center-image }**Figure 2:** time series- Total Vehicle Sales (1994-2016)   [1000x638 203K]
+![Time series]({{ site.baseurl | prepend:site.url}}/img/Totalsales.png){: .center-image }<b>Figure 3:</b> time series- Total Vehicle Sales (1994-2016)   [1000x638 203K]
 
 ### Total Passenger Car Sales
-![Time series]({{ site.baseurl | prepend:site.url}}/img/PassengerSales.png){: .center-image }**Figure 3:** time series- Passenger Vehicle Sales (1994-2016)   [1000x638 214K]
+![Time series]({{ site.baseurl | prepend:site.url}}/img/PassengerSales.png){: .center-image }<b>Figure 4:</b> time series- Passenger Vehicle Sales (1994-2016)   [1000x638 214K]
 
 ### Total SUV Sales
-![Time series]({{ site.baseurl | prepend:site.url}}/img/SUVsales.png){: .center-image }**Figure 4:** time series- Sports Utility Vehicle Sales (1994-2016)  [1000x638 160K]
-
-### Seasonal decomposition
-![Time series]({{ site.baseurl | prepend:site.url}}/img/Totalsales-grouped.png){: .center-image }**Figure 5:** Seasonal decomposition - Total vehicle sales (with SUV and Passenger cars) (1994-2016)  [1024x747 213K]
+![Time series]({{ site.baseurl | prepend:site.url}}/img/SUVsales.png){: .center-image }<b>Figure 5:</b> time series- Sports Utility Vehicle Sales (1994-2016)  [1000x638 160K]
