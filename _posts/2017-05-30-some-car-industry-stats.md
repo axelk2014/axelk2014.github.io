@@ -6,7 +6,7 @@ tags: car-industry visualisation tableau R ggplot time-series
 description: Some visualisations of ABS car industry data
 ---
 
-Some sample graphs created in Tableau from 931401.xls (ABS dataset on Austalian Motor Car Sales - April 2017 - non seasonally adjusted data)
+Some sample graphs created in ggplot (Fig 1) and Tableau (Fig 2 to 5) from 931401.xls (ABS dataset on Austalian Motor Car Sales - April 2017 - non seasonally adjusted data)
 
 | Source | URL         | Datetime |
 |:-------------|:------------------|:------|
@@ -15,6 +15,8 @@ Some sample graphs created in Tableau from 931401.xls (ABS dataset on Austalian 
 
 ### Seasonal decomposition
 ![Time series]({{ site.baseurl | prepend:site.url}}/img/Totalsales-grouped.png){: .center-image }<b>Figure 1:</b> Seasonal decomposition - Total vehicle sales (with SUV and Passenger cars) (1994-2016)  [1024x747 213K]
+
+R file used to create chart: [https://github.com/axelk2014/carindustry/blob/master/carIndustry.R](https://github.com/axelk2014/carindustry/blob/master/carIndustry.R)
 
 ### Total Sales - stacked
 ![stacked bar chart]({{ site.baseurl | prepend:site.url}}/img/SalesNewMotorVehicles_AU.png){: .center-image }<b>Figure 2:</b> stacked bar chart - Australian Motor Vehicle Sales (1994-2017)   [8759x1000 1.3MB]
