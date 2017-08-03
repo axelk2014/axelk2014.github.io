@@ -16,6 +16,8 @@ Some sample graphs created in ggplot (Fig 1) and Tableau (Fig 2 to 5) from 93140
 ### Seasonal decomposition
 ![Time series]({{ site.baseurl | prepend:site.url}}/img/Totalsales-grouped.png){: .center-image }<b>Figure 1:</b> Seasonal decomposition - Total vehicle sales (with SUV and Passenger cars) (1994-2016)  [1024x747 213K]
 
+In the year 2000, Australia introduced the GST ([https://www.taxsuperandyou.gov.au/node/133/take](https://www.taxsuperandyou.gov.au/node/133/take)). This may account for the signal around the year 2000 on the chart.
+
 R file used to create chart: [https://github.com/axelk2014/carindustry/blob/master/carIndustry.R](https://github.com/axelk2014/carindustry/blob/master/carIndustry.R)
 
 ### Total Sales - stacked
