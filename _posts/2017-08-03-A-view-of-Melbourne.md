@@ -18,10 +18,10 @@ A brief analysis on Melbourne CBD industry demographics
 ### Licensed venues: number of patrons
 ![Geo plot]({{ site.baseurl | prepend:site.url}}/img/Numberofpatrons.png){: .center-image } Screenshot of visualisation - Number of licensed patrons by venue - Melbourne CBD [739x445 495K]
 
-Code used to create chart: [https://github.com/axelk2014/afl-datablog/blob/master/Melbourne%20Venue%20map.ipynb](https://github.com/axelk2014/afl-datablog/blob/master/Melbourne%20Venue%20map.ipynb]
+Code used to create chart: [https://github.com/axelk2014/afl-datablog/blob/master/Melbourne%20Venue%20map.ipynb](https://github.com/axelk2014/afl-datablog/blob/master/Melbourne%20Venue%20map.ipynb)
 
-From the Melbourne data website:
-"A team of up to 6 surveyors conducts a field survey which involves visiting every establishment in every building in the Census area (City of Melbourne municipality). Every commercial property is surveyed at least once every two years."
+<b>From the Melbourne data website:</b><br>
+<i>"A team of up to 6 surveyors conducts a field survey which involves visiting every establishment in every building in the Census area (City of Melbourne municipality). Every commercial property is surveyed at least once every two years."</i>
 
 ### Sample of industry types by employment - Melbourne Docklands
 ![stacked bar chart]({{ site.baseurl | prepend:site.url}}/img/CLUEplot.png){: .center-image } Melbourne city council areas - employment type   [800x600 78K]
