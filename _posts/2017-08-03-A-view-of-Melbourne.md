@@ -22,13 +22,14 @@ A brief exploratory data anlysis on City of Melbourne industry and employment de
 Code used to create chart: [https://github.com/axelk2014/afl-datablog/blob/master/Melbourne%20Venue%20map.ipynb](https://github.com/axelk2014/afl-datablog/blob/master/Melbourne%20Venue%20map.ipynb)
 
 ### Melbourne Employment numbers by industry
-![bar chart]({{ site.baseurl | prepend:site.url}}/img/Melbourne_employmentnumbers.png){: .center-image } <i>source: http://melbourne.geografia.com.au/industries</i> <br>
-<b>Figure 2: </b>Employment numbers by industry - City of Melbourne [1000x800 91K]
+![bar chart]({{ site.baseurl | prepend:site.url}}/img/Melbourne_employmentnumbers.png){: .center-image }  
+<b>Figure 2: </b>Employment numbers by industry - City of Melbourne [1000x800 91K]<br>
+<i>source: http://melbourne.geografia.com.au/industries</i>
 
 ### Melbourne city Economic output by industry
-![bar chart]({{ site.baseurl | prepend:site.url}}/img/Melbourne_economicoutput.png){: .center-image } <i>source: http://melbourne.geografia.com.au/industries</i> <br>
-<b>Figure 3: </b>Economic output by industry - City of Melbourne  [1000x800 96K]
-
+![bar chart]({{ site.baseurl | prepend:site.url}}/img/Melbourne_economicoutput.png){: .center-image }  
+<b>Figure 3: </b>Economic output by industry - City of Melbourne  [1000x800 96K] <br>
+<i>source: http://melbourne.geografia.com.au/industries</i>
 
 ### Sample of industry types by employment - Melbourne Docklands
 ![stacked bar chart]({{ site.baseurl | prepend:site.url}}/img/CLUEplot.png){: .center-image } <b>Figure 4: </b> Melbourne city council areas - employment type   [800x600 78K]
