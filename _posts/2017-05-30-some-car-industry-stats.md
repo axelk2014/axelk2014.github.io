@@ -8,11 +8,6 @@ description: Some visualisations of ABS car industry data
 
 Some sample graphs created in ggplot (Fig 1) and Tableau (Fig 2 to 5) from 931401.xls (ABS dataset on Austalian Motor Car Sales - April 2017 - non seasonally adjusted data)
 
-| Source | URL         | Datetime |
-|:-------------|:------------------|:------|
-| ABS          | [http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/9314.0April%202017?OpenDocument](http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/9314.0April%202017?OpenDocument) |  2017-05-24 11:44am  |
-
-
 ### Seasonal decomposition
 ![Time series]({{ site.baseurl | prepend:site.url}}/img/Totalsales-grouped.png){: .center-image }<b>Figure 1:</b> Seasonal decomposition - Total vehicle sales (with SUV and Passenger cars) (1994-2016)  [1024x747 213K]
 
@@ -31,3 +26,8 @@ R file used to create chart: [https://github.com/axelk2014/carindustry/blob/mast
 
 ### Total SUV Sales
 ![Time series]({{ site.baseurl | prepend:site.url}}/img/SUVsales.png){: .center-image }<b>Figure 5:</b> time series- Sports Utility Vehicle Sales (1994-2016)  [1000x638 160K]
+
+
+| Source | URL         | Datetime |
+|:-------------|:------------------|:------|
+| ABS          | [http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/9314.0April%202017?OpenDocument](http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/9314.0April%202017?OpenDocument) |  2017-05-24 11:44am  |
