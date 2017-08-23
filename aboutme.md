@@ -9,6 +9,7 @@ description: About Me
 
 ## About me:
 
+
 There is a bit of confusion around what is Data Science ; this Venn diagram reflects the most common understanding:
 
 ![Data Science Venn]({{ site.baseurl | prepend:site.url}}/img/datascience.svg){: .center-image } <b>Data science</b>
@@ -20,7 +21,8 @@ I worked as Systems and Network Administrator for over 12 years, mostly in Film 
 
 So here's one way to visualise my skillset - the colour coding of the labels roughly approximates the colour of the circles in the Venn diagram:
 
-![Radar Chart]({{ site.baseurl | prepend:site.url}}/img/AKradarchart.png){: .center-image } <b> Alex's skill set </b>
+#### Alex's skill set
+![Radar Chart]({{ site.baseurl | prepend:site.url}}/img/AKradarchart.png){: .center-image } 
 
 And here's the same data in a lovely table:
 ![Table]({{ site.baseurl | prepend:site.url}}/img/ft.png){: .center-image }
