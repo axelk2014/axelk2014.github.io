@@ -7,7 +7,7 @@ description: About Me
 
 ---
 
-##About me:
+## About me:
 
 There is a bit of confusion around what is Data Science ; this Venn diagram reflects the most common understanding:
 
@@ -16,7 +16,7 @@ There is a bit of confusion around what is Data Science ; this Venn diagram refl
 
 ### Skill sets
 To be successful in data science you need to bring together a number of skills.
-I worked as Systems and Network Administrator for over 12 years, mostly in Film and Television production before making the transition to digital. This has given me an excellent grounding in computer systems, databases, networks, etc.. As Operations Manager for an e-commerce firm I gained first hand knowledge and experience around cloud infrastructure (mostly AWS). Having worked a number of big advertising agencies, I have significant experience in Advertising, Marketing and Communication.
+I worked as Systems and Network Administrator for over 12 years, mostly in Film and Television production before making the transition to digital. This has given me an excellent grounding in computer systems, databases, and networks. As Operations Manager for an e-commerce firm I gained first hand knowledge and experience around cloud infrastructure (mostly AWS). Having worked a number of big advertising agencies, I have significant experience in Advertising, Marketing and Communication.
 
 So here's one way to visualise my skillset - the colour coding of the labels roughly approximates the colour of the circles in the Venn diagram:
 
