@@ -1,5 +1,5 @@
 ---
-layout: aboutme
+layout: default
 title:  "About Me"
 date:   2017-08-21 19:11:01 -0600
 tags:
