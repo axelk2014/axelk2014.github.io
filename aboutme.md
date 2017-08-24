@@ -9,11 +9,6 @@ description: About Me
 
 ## About me
 
-This Venn diagram is combination of few reflects the most common understanding:
-
-![Data Science Venn]({{ site.baseurl | prepend:site.url}}/img/datascience1.svg){: .center-image }<br>
-<b><sup>* </sup> Kenny Logins:</b> Some Venn diagrams noted this intersection as the "Danger Zone". It is not clear to me why this is the case.
-
 ### Skill sets
 To be successful in data science you need to bring together a number of skills.
 I worked as Systems and Network Administrator for over 12 years, mostly in Film and Television production before making the transition to digital. This has given me an excellent grounding in computer systems, databases, and networks. As Operations Manager for an e-commerce firm I gained first hand knowledge and experience around cloud infrastructure (mostly AWS). Having worked a number of big advertising agencies, I have significant experience in Advertising, Marketing and Communication.
@@ -25,3 +20,9 @@ So here's one way to visualise my skillset - the colour coding of the labels rou
 And here's the same data in a lovely table:
 ![Table]({{ site.baseurl | prepend:site.url}}/img/ft.png){: .center-image }<br>
 <i>source: self-reported</i>
+
+### What is Data Science?
+This Venn diagram (which is combination of a few round the internets) reflects the most common understanding of what the main components of Data Science:
+
+![Data Science Venn]({{ site.baseurl | prepend:site.url}}/img/datascience1.svg){: .center-image }<br>
+[<b><sup>* </sup> Kenny Logins:</b>](https://www.youtube.com/watch?v=kyAn3fSs8_A) Some Venn diagrams noted this intersection as the "Danger Zone". It is not clear to me why this is the case.
