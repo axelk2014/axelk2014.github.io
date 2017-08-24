@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: aboutme
 title:  "About Me"
 date:   2017-08-21 19:11:01 -0600
 tags:
@@ -7,12 +7,11 @@ description: About Me
 
 ---
 
-## About me:
-
+## About me
 
 There is a bit of confusion around what is Data Science ; this Venn diagram reflects the most common understanding:
 
-![Data Science Venn]({{ site.baseurl | prepend:site.url}}/img/datascience.svg){: .center-image } <b>Data science</b>
+![Data Science Venn]({{ site.baseurl | prepend:site.url}}/img/datascience1.svg){: .center-image } <b>Data science</b>
 <sup>* </sup> Kenny Logins: Some Venn diagrams noted this section as the "Danger Zone". It is not clear to me why this is the case.
 
 ### Skill sets
@@ -22,7 +21,7 @@ I worked as Systems and Network Administrator for over 12 years, mostly in Film 
 So here's one way to visualise my skillset - the colour coding of the labels roughly approximates the colour of the circles in the Venn diagram:
 
 #### Alex's skill set
-![Radar Chart]({{ site.baseurl | prepend:site.url}}/img/AKradarchart.png){: .center-image } 
+![Radar Chart]({{ site.baseurl | prepend:site.url}}/img/AKradarchart.png){: .center-image }
 
 And here's the same data in a lovely table:
 ![Table]({{ site.baseurl | prepend:site.url}}/img/ft.png){: .center-image }
