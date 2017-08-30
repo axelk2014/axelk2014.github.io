@@ -30,6 +30,6 @@ And here's the same data in a lovely table:
 
 
 Source files used to create About Me graphs:
-1. Venn Diagram: https://github.com/axelk2014/AK-src/blob/master/AK%20Venn%20Diagram.ipynb
+1. Venn Diagram: [https://github.com/axelk2014/AK-src/blob/master/AK%20Venn%20Diagram.ipynb](https://github.com/axelk2014/AK-src/blob/master/AK%20Venn%20Diagram.ipynb)
 2. Radar chart:
-https://github.com/axelk2014/AK-src/blob/master/Radarplot.R
+[https://github.com/axelk2014/AK-src/blob/master/Radarplot.R](https://github.com/axelk2014/AK-src/blob/master/Radarplot.R)
