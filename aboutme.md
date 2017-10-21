@@ -14,6 +14,8 @@ This Venn diagram reflects the most common understanding of what the main compon
 
 ![Data Science Venn]({{ site.baseurl | prepend:site.url}}/img/datascience1.svg){: .center-image }<br>
 [<b><sup>* </sup> Kenny Logins:</b>](https://www.youtube.com/watch?v=kyAn3fSs8_A) Some Venn diagrams noted this intersection as the "Danger Zone". It is not clear to me why this is the case.
+<i>code for graph: [https://github.com/axelk2014/AK-src/blob/master/AK%20Venn%20Diagram.ipynb](https://github.com/axelk2014/AK-src/blob/master/AK%20Venn%20Diagram.ipynb)</i>
+
 
 ### Skill sets
 To be successful in data science you need to bring together a number of skills.
@@ -23,13 +25,9 @@ So here's one way to visualise my skillset - the colour coding of the labels rou
 
 ![Radar Chart]({{ site.baseurl | prepend:site.url}}/img/AKradarchart.png){: .center-image }
 
+<i>code for graph: [https://github.com/axelk2014/AK-src/blob/master/Radarplot.R](https://github.com/axelk2014/AK-src/blob/master/Radarplot.R) </i>
+
+
 And here's the same data in a lovely table:
 ![Table]({{ site.baseurl | prepend:site.url}}/img/ft.png){: .center-image }<br>
 <i>source: self-reported</i>
-
-
-
-Source files used to create About Me graphs:
-1. Venn Diagram: [https://github.com/axelk2014/AK-src/blob/master/AK%20Venn%20Diagram.ipynb](https://github.com/axelk2014/AK-src/blob/master/AK%20Venn%20Diagram.ipynb)
-2. Radar chart:
-[https://github.com/axelk2014/AK-src/blob/master/Radarplot.R](https://github.com/axelk2014/AK-src/blob/master/Radarplot.R)
