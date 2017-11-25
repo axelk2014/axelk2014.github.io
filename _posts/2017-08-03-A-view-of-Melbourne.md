@@ -8,7 +8,7 @@ custom_css: leaflet
 custom_js: leaflet
 ---
 
-A brief exploratory data anlysis on City of Melbourne industry and employment demographics
+A brief exploratory data analysis on City of Melbourne industry and employment demographics
 
 ### Licensed venues: number of patrons
 ![Geo plot]({{ site.baseurl | prepend:site.url}}/img/Numberofpatrons.png){: .center-image } <b>Figure 1: </b>Screenshot of visualisation - Number of licensed patrons by venue - Melbourne CBD [739x445 495K]
