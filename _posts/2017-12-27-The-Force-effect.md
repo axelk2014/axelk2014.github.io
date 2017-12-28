@@ -79,7 +79,7 @@ The share performance chart (Figure 2) shows increases in share price in between
 
 
 ### Links:
-- Original story on Reddit post that started it all: [https://www.theringer.com/features/2017/12/2/16725196/reddit-fighting-microtransaction-exploitation-in-video-games] (https://www.theringer.com/features/2017/12/2/16725196/reddit-fighting-microtransaction-exploitation-in-video-games)
+- Original story on Reddit post that started it all: [https://www.theringer.com/features/2017/12/2/16725196/reddit-fighting-microtransaction-exploitation-in-video-games](https://www.theringer.com/features/2017/12/2/16725196/reddit-fighting-microtransaction-exploitation-in-video-games)
 - Honest Game Trailers of [Star Wars Battlefront 2](https://www.youtube.com/watch?v=DreMDPj3s94) devotes a some time to this controversy
 - big thanks to [this](https://leonawicz.github.io/HtmlWidgetExamples/ex_dt_sparkline.html) guy for the detailed post on using mixed sparkline tables in R
 <br>
