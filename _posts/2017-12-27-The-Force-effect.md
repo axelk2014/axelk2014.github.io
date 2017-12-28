@@ -64,6 +64,8 @@ The sparklines show the share price performance in the 15 day trading period bef
 - the largest dollar value decrease was after the release of Star Wars Battlefront 2 of $-7.99
 - from 2015, there was a big jump in share price (over 90%)
 
+
+
 ## Takeaway
 Based on the sampled games, it does suggest that the share price fell after Star Wars Battlefront 2 was released; however it also shows that the share price falls after most game releases.
 
@@ -80,7 +82,8 @@ The share performance chart (Figure 2) shows increases in share price in between
 - Original story on Reddit post that started it all: [https://www.theringer.com/features/2017/12/2/16725196/reddit-fighting-microtransaction-exploitation-in-video-games] (https://www.theringer.com/features/2017/12/2/16725196/reddit-fighting-microtransaction-exploitation-in-video-games)
 - Honest Game Trailers of [Star Wars Battlefront 2](https://www.youtube.com/watch?v=DreMDPj3s94) devotes a some time to this controversy
 - big thanks to [this](https://leonawicz.github.io/HtmlWidgetExamples/ex_dt_sparkline.html) guy for the detailed post on using mixed sparkline tables in R
-
+<br>
+<br>
 
 | Source | URL         | Datetime |
 |:-------------|:------------------|:------|
