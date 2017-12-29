@@ -6,16 +6,16 @@ tags: R ggplot
 description: Can micro-transactions in EA games affect share price?
 ---
 
-# Question: Did the added micro-transactions to EA games Star Wars: Battlefront 2 affect the share price?
+# Question: Did the added micro-transactions to EA games Star Wars Battlefront 2 affect the share price?
 
 If you are not a gamer, you may have missed the furore surrounding the release of Star Wars: Battlefront 2 on November 17, 2017.
 
-Briefly, days before launch (after all the pre-launch game previews had been played and reviews had been written), Electronic Arts (EA) introduced a "micro-transaction" mechanic in the game. This meant that players had to spend money to receive upgrades, characters, and weapons "essential" to progress within the game.
+Briefly, days before launch (after all the pre-launch game previews had been played and reviews had been written), Electronic Arts (EA) introduced a "micro-transaction" mechanic in the game. Players now had to spend money to receive upgrades, characters, and weapons "essential" to progress within the game - critically this 'feature' was not active for all the pre-release previews that were released.
 
 It all kicked off with [this](https://www.reddit.com/r/StarWarsBattlefront/comments/7c6bjm/it_takes_40_hours_to_unlock_a_hero_spreadsheet/) Reddit post that detailed how many hours a gamer would have to play to get these upgrades vs spending money and receiving them.
 People weren't happy. After spending ~$60 (USD) for game, it is reasonable to expect you can play the full game without additional expense.
 
-So the internet blew up in fury, and EA games came under significant PR blowback, not only for the micro-transactions, but also for the tepid response to gamers concerns. Eventually the noise got so loud, that EA reversed their decision and removed access to some the upgrades via micro-transactions and changed the playing time required to get the additional gear.
+So the internet blew up in fury, and EA games came under significant PR blowback, not only for the micro-transactions, but also for the tepid response to gamers concerns. Eventually, as the story goes, the noise got so loud, that EA reversed their decision and removed access to some the upgrades via micro-transactions and changed the playing time required to get the additional gear.
 
 *There's more to the story and if interested, see the links below*
 
@@ -37,7 +37,7 @@ What this chart shows is a few things:
 - the biggest selling game of all  is Tetris, followed by Minecraft (insert some comment here about the popularity of blocks)
 - EA has a number of titles in the list but not near the top 5
 
-## Electronic Arts share performance with major game release dates
+## EA Games share performance with major game release dates
 
 Disclosure: I am not a financial analyst or anything even close to it, so keep that in mind when reviewing the following analysis.
 
@@ -49,7 +49,7 @@ Looking only at this graph it does not seem that the release of any game results
 
 Let's examine the share price in more detail.
 
-## EA share prices
+### Detailed share performance
 This table lists some of the major game release dates, with the share price on the day of release.
 
 {% include stockpriceperformance.html %}
@@ -67,15 +67,17 @@ The sparklines show the share price performance in the 15 day trading period bef
 
 
 ## Takeaway
-Based on the sampled games, it does suggest that the share price fell after Star Wars Battlefront 2 was released; however it also shows that the share price falls after most game releases.
+Based on the sampled games, it suggests that the share price fell after Star Wars Battlefront 2 was released; however it also shows that the share price falls after most game releases.
 
 The share performance chart (Figure 2) shows increases in share price in between game releases. It is possible that there are games I have not included in the visualisation that contributed to this, however FIFA, Battlefield and Star Wars would be considered major properties for EA. And of course there are likely many other factors not considered in this analysis that could affect share price.
 
+So, did the micro-transaction increase share price ? Clearly not in this case, however does the introduction of micro-transactions improve the share performance in general? Further research would be required...
 
 ### Further research:
 - Compare share price performance of other video game publishers (Nintendo, Rockstar)
 - Understand the Video game sales cycle (is a "15 day after release date" a reasonable metric?)
 - Detail the total revenue gained from sales (not just units sold)
+- See if other listed games companies share prices are affected with games that do have micro-transactions
 
 
 ### Links:
