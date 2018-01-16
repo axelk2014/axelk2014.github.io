@@ -6,7 +6,7 @@ tags: R ggplot
 description: Can micro-transactions in EA games affect share price?
 ---
 
-# Question: Did the added micro-transactions to EA games Star Wars Battlefront 2 affect the share price?
+# Question: Did the added micro-transactions to EA Games Star Wars Battlefront 2 affect the share price?
 
 If you are not a gamer, you may have missed the furore surrounding the release of Star Wars: Battlefront 2 on November 17, 2017.
 

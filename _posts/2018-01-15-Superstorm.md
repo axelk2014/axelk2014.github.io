@@ -1,79 +1,103 @@
 ---
 layout: post
-title:  "The Weather -- (work in progress)"
-date:   2017-06-19 16:16:01 -0600
+title:  "Superstorm"
+date:   2018-01-15 16:16:01 -0600
 tags: weather visualisation bash R ggplot
-description: An investigation on the accuracy of BOM forecasts
+description: An investigation on the Melbourne 2017 "Superstorm"
 ---
 
-Last updated: 2018-01-15
+Previous weather analysis link:
+[here]({{ site.baseurl | prepend:site.url}}/_posts/2017-05-31-the-weather)
 
-Work in progress.
+### Background
 
-To answer the question: How accurate is the weather forecast 6 days out?
+In the last week of November 2017, Victorian authorities, media and the Bureau of Meteorology collectively freaked out at the forecast of an imminent "Superstorm".
+
+A sample of the coverage before and during the "Superstorm".
+
+- [Nov 30 - BOM warns Victoria to be hit by 'unprecedented' thunderstorms, flash flooding](http://www.abc.net.au/news/2017-11-29/thunderstorm-warning-issued-for-victoria/9207056)
+>"Victoria is set to be drenched with up to three times its monthly rainfall average mostly over two days with "unprecedented" thunderstorms"
+"Mr Williams said there could be rainfall of up to 300 millimetres in the state's north-east ranges."
+
+- [Dec 1 - Melbourne weather: Victorians warned that worst of forecast super storm yet to come](http://www.theage.com.au/victoria/melbourne-weather-recordbreaking-rainfall-begins-its-journey-from-victorias-west-20171130-gzwd54.html)
+>"Premier Daniel Andrews advised workers on Friday afternoon to head home early and said people needed to be vigilant and take the weather warnings seriously."
+
+- [Dec 2 - Melbourne weather: Victorians warned not to be complacent as worst of super storm to hit on Saturday](http://www.theage.com.au/victoria/melbourne-weather-victorians-warned-not-to-be-complacent-as-worst-of-super-storm-to-hit-on-saturday-20171201-gzx9ge.html)
+>"While Melbourne has so far escaped the worst of the storm, city residents have been warned to expect more rain on Saturday evening, bringing the risk of flash flooding."
+
+Additionally, every phone registered in Victoria received a text message from the SES (State Emergency Service) on the 1st of December:
+"SMS from VicSES. Flooding is expected across Victoria this weekend. Heaviest rain on Saturday. Check on family & friends. Stay informed"
+
+**Note:** This is the first time ever, that the Victorian authorities have sent a text message to all phones. It was unprecedented and certainly raised the level of drama around this event.
+
+To be fair, it is likely that the signals did warrant a response and Victoria's government and agencies don't have the best record for safety and managing emergencies, so erring on the side of caution is a good thing. So good on them.
+
+Let's look at some charts....
+
+
+### Rain rain
 
 **Method:** Scrape the 6 day forecast from bom.gov.au every day for a period of time then compare with actuals (also downloaded from the BOM) to see how accurate their forecast is.
 
-<br>
+![Melbournerainfall_day4]({{ site.baseurl | prepend:site.url}}/img/1024x745_melbourne_Day-4_forecast_2018-01-15_chart.pngg)
 
-## Full temperature record
+What you are looking at here is a chart of actual recorded rainfall (darker blue columns) plotted against forecasted rainfall (columns off-white). This particular chart is the 4 day forecast, i.e What the BOM said about about Thursday on a Monday. The maximum values are labelled.
 
-Initially on this project, I used the defaults for ggplot charts:
+![Melbournerainfall_day2]({{ site.baseurl | prepend:site.url}}/img/1024x745_melbourne_Day-2_forecast_2018-01-15_chart.png)
 
-The lighter background makes it more difficult to see the contrast between the thin lines (forecast data) with the ribbon (actual data). Specifically, the feature of interest in the chart is the overlap (and lack of overlap) between the ribbon and the lines.
+This chart shows the same actuals data as above, but with the 2 Day forecast plotted against it.
 
-![adelaide_day1]({{ site.baseurl | prepend:site.url}}/img/adelaide_Day-5_forecast_2017-06-12_zoomed.png)
+![Melbournerainfall_difference_day2]({{ site.baseurl | prepend:site.url}}/img/1024x745_melbourne_Rainfall_vs_Forecast_Day-2_2018-01-15_difference_chart.png)
 
-So once the problem of the visualisation is identified, it was easier to explore options to overcome it. I landed on a dark background with bright lines, and decreased the opacity to 70%, which makes it easy to identify the difference between the forecast and the actual data.
+This plot shows the variation of the forecasted rainfall vs the actual rainfall. Note the large spike near the right hand side, this will become interesting later on....
 
-![adelaide_day2]({{ site.baseurl | prepend:site.url}}/img/adelaide_Day-2_forecast_2017-06-18_chart.png)
+For comparison, lets look at another city:
 
-However the chart only provides a limited understanding of how different (or inaccurate) the forecast is from the actual data. The interest for this visualisation is to see how the forecast improves (or not) as the forecasted day approaches. To do this, an animated view of the forecasted data vs the actual data will show how how the forecast data converges to actual.
+![Darwinrainfall_day2]({{ site.baseurl | prepend:site.url}}/img/1024x745_darwin_Day-2_forecast_2018-01-15_chart.png)
 
-### Animations
+2 points of interest:
+1. There is a clearly delineated rainy season and dry season in Darwin.<br><br>
+1. The forecasted level of rain did not approach the top 5 recorded rainfall days.
 
-For each chart below:
-- Each animation shows the forecasted day range (thin coloured line counting down from 6 day forecast to 5 day forecast, etc.. until 1 day forecast.
-- Long dashed line in blue showing the date of the maximum temperature range (actual)
-- Short dashed line (coloured by day) showing the date of the maximum temperature range (forecast)  
+Further data would be needed to confirm, however the significant variability in rainfall forecasts is consisted in other major cities.
 
-| City | Link         | Dimensions |
+
+### Superstorm
+
+Anecdotally, the Melbourne 2017 "Superstorm" was supposed to occur on Fri 1st Dec to Sunday 3rd Dec.
+
+The forecasted rainfall for that week was relatively modest until a couple of days before:
+
+
+#### Forecasts - Day 6 to Day 1
+
+| Forecast Day | Chart        | Dimensions |
 |:-------------|:------------------|:------|
-| Adelaide | [![Adelaide](https://axelk2014.github.io/img/adelaide_anim_tn.png)](https://axelk2014.github.io/img/adelaide_anim.gif){: .center-image } | 1024x745 GIF 512k|
-| Brisbane | [![Brisbane](https://axelk2014.github.io/img/brisbane_anim_tn.png)](https://axelk2014.github.io/img/brisbane_anim.gif){: .center-image } | 1024x745 GIF 342k|
-| Darwin | [![Darwin](https://axelk2014.github.io/img/darwin_anim_tn.png)](https://axelk2014.github.io/img/darwin_anim.gif){: .center-image } | 1024x745 GIF 184k|
-| Hobart | [![Hobart](https://axelk2014.github.io/img/hobart_anim_tn.png)](https://axelk2014.github.io/img/hobart_anim.gif){: .center-image } | 1024x745 GIF 441k|
-| Melbourne | [![Melbourne](https://axelk2014.github.io/img/melbourne_anim_tn.png)](https://axelk2014.github.io/img/melbourne_anim.gif){: .center-image } | 1024x745 GIF 498k|
-| Perth | [![Perth](https://axelk2014.github.io/img/perth_anim_tn.png)](https://axelk2014.github.io/img/perth_anim.gif){: .center-image } | 1024x745 GIF 480k|
-| Sydney | [![Sydney](https://axelk2014.github.io/img/sydney_anim_tn.png)](https://axelk2014.github.io/img/sydney_anim.gif){: .center-image } | 1024x745 GIF 412k|
+| 6 | [![Day6](https://axelk2014.github.io/img/1024x745_Nov-Dec_2017-melbourne_Day-6_forecast_2018-01-13_chart.png){: .center-image } | 1024x745 PNG 112k|
+| 5 | [![Day5](https://axelk2014.github.io/img/1024x745_Nov-Dec_2017-melbourne_Day-5_forecast_2018-01-13_chart.png){: .center-image } | 1024x745 PNG 111k|
+| 4 | [![Day4](https://axelk2014.github.io/img/1024x745_Nov-Dec_2017-melbourne_Day-4_forecast_2018-01-13_chart.png){: .center-image } | 1024x745 PNG 113k|
+| 3 | [![Day3](https://axelk2014.github.io/img/1024x745_Nov-Dec_2017-melbourne_Day-3_forecast_2018-01-13_chart.png){: .center-image } | 1024x745 PNG 113k|
+| 2 | [![Day2](https://axelk2014.github.io/img/1024x745_Nov-Dec_2017-melbourne_Day-2_forecast_2018-01-13_chart.png){: .center-image } | 1024x745 PNG 114k|
+| 1 | [![Day1](https://axelk2014.github.io/img/1024x745_Nov-Dec_2017-melbourne_Day-1_forecast_2018-01-13_chart.png){: .center-image } | 1024x745 PNG 114k|
 
-<br>
-## City based forecast
 
-Looking at each city actual and forecast data, exactly how different is the forecast from the actual.
+dotted red lines indicate dates of the "Superstorm"
 
-As data is supplied with minimum and maximum temperature, let's examine them separately.
+As you can see it was not until the 2 day forecast that the forecasted level of rain jumped significantly, and the day before wildly over-estimated rain levels.
 
-To evaluate and compare, I created a side by side comparison. The "interest" of the chart is to see how each forecasted day compares to each other as well as the actual data.
+### Movies
 
-Using the same colour schemes above, for aesthetic reasons only, I created the following:
+For comparison, I took the same date range for the Superstorm plots and plotted the data from 12 months prior - this movie shows the side by side rainfall comparison of the same date range (October 30 to December 30) in the year 2016 and 2017.
 
-| Type | Thumbnail link        | Dimensions |
-|:-------------|:------------------|:------|
-| Maximum | [![Total](https://axelk2014.github.io/img/total-maximum_tn.png)](https://axelk2014.github.io/img/total-maximum.png){: .center-image } | 1024x745 PNG 133k|
-| Minimum | [![Brisbane](https://axelk2014.github.io/img/total-minimum_tn.png)](https://axelk2014.github.io/img/total-minimum.png){: .center-image } | 1024x745 PNG 128k|
+![AnimatedForecast](https://axelk2014.github.io/img/Melbourne_Day6toDay1_forecast_movie.mp4)
 
-***Note on colours***
 
-With comparative boxplots, the primary interest is the thick "median" line. When you reverse the colours and the boxplot is drawn with white lines on a darker background, the 'contrast' seems less than dark lines on a lighter background.
+## The Takeaway
 
-And if I changed the boxplot line colours by forecasted day, you lose not only the number label for the median, but imply there is a difference between each boxplot (ignoring the values). The boxplots all measure the exact same thing, so coding the colours of the day to each boxplot does not add any information to the chart.
+- There is a significant increase in variability in rainfall forecast vs temperature forecast (see previous post on temperature forecasting [here]({{ site.baseurl | prepend:site.url}}/_posts/2017-05-31-the-weather))
+- Even in locales where there is a strong cyclical pattern, the ability for the BOM to forecast rainfall is inaccurate. 
 
-Compare them here:
 
-| White lines/dark background | Coloured lines/dark background |
-|:-------------|:------------------|
-|[![whitelines](https://axelk2014.github.io/img/total-minimum-dark.png)](https://axelk2014.github.io/img/total-minimum-dark.png){: .center-image } | [![colourelines](https://axelk2014.github.io/img/total-minimum-darkv2.png)](https://axelk2014.github.io/img/total-minimum-dark_colouredlines.png){: .center-image } |
 
 <br>
 
