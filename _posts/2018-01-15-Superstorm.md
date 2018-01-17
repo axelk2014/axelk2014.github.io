@@ -26,9 +26,9 @@ A sample of the coverage before and during:
 >"While Melbourne has so far escaped the worst of the storm, city residents have been warned to expect more rain on Saturday evening, bringing the risk of flash flooding."
 
 Additionally, every phone registered in Victoria received a text message from the SES (State Emergency Service) on the 1st of December:
-"SMS from VicSES. Flooding is expected across Victoria this weekend. Heaviest rain on Saturday. Check on family & friends. Stay informed"
+>>"SMS from VicSES. Flooding is expected across Victoria this weekend. Heaviest rain on Saturday. Check on family & friends. Stay informed"
 
-<b>Note:</b> This is the first time ever, that the Victorian authorities have sent a text message to all phones. It was unprecedented and certainly raised the level of drama around this event.
+**Note:** This is the first time ever, that the Victorian authorities have sent a text message to all phones. It was unprecedented and certainly raised the level of drama around this event.
 
 To be fair, it is likely that the signals did warrant a response and Victoria's government and agencies don't have the best record for safety and managing emergencies, so erring on the side of caution is a good thing. So good on them.
 
@@ -75,12 +75,12 @@ The forecasted rainfall for that week was relatively modest until a couple of da
 
 | Forecast Day | Chart        | Dimensions |
 |:-------------|:------------------|:------|
-| <h3>6</h3> | [![Day6](https://axelk2014.github.io/img/1024x745_Nov-Dec_2017-melbourne_Day-6_forecast_2018-01-13_chart.png){: .center-image } | 1024x745 PNG 112k|
-| <h3>5</h3> | [![Day5](https://axelk2014.github.io/img/1024x745_Nov-Dec_2017-melbourne_Day-5_forecast_2018-01-13_chart.png){: .center-image } | 1024x745 PNG 111k|
-| <h3>4</h3> | [![Day4](https://axelk2014.github.io/img/1024x745_Nov-Dec_2017-melbourne_Day-4_forecast_2018-01-13_chart.png){: .center-image } | 1024x745 PNG 113k|
-| <h3>3</h3> | [![Day3](https://axelk2014.github.io/img/1024x745_Nov-Dec_2017-melbourne_Day-3_forecast_2018-01-13_chart.png){: .center-image } | 1024x745 PNG 113k|
-| <h3>2</h3> | [![Day2](https://axelk2014.github.io/img/1024x745_Nov-Dec_2017-melbourne_Day-2_forecast_2018-01-13_chart.png){: .center-image } | 1024x745 PNG 114k|
-| <h3>1</h3> | [![Day1](https://axelk2014.github.io/img/1024x745_Nov-Dec_2017-melbourne_Day-1_forecast_2018-01-13_chart.png){: .center-image } | 1024x745 PNG 114k|
+| 6 | [![Day6](https://axelk2014.github.io/img/1024x745_Nov-Dec_2017-melbourne_Day-6_forecast_2018-01-13_chart.png){: .center-image } | 1024x745 PNG 112k|
+| 5 | [![Day5](https://axelk2014.github.io/img/1024x745_Nov-Dec_2017-melbourne_Day-5_forecast_2018-01-13_chart.png){: .center-image } | 1024x745 PNG 111k|
+| 4 | [![Day4](https://axelk2014.github.io/img/1024x745_Nov-Dec_2017-melbourne_Day-4_forecast_2018-01-13_chart.png){: .center-image } | 1024x745 PNG 113k|
+| 3 | [![Day3](https://axelk2014.github.io/img/1024x745_Nov-Dec_2017-melbourne_Day-3_forecast_2018-01-13_chart.png){: .center-image } | 1024x745 PNG 113k|
+| 2 | [![Day2](https://axelk2014.github.io/img/1024x745_Nov-Dec_2017-melbourne_Day-2_forecast_2018-01-13_chart.png){: .center-image } | 1024x745 PNG 114k|
+| 1 | [![Day1](https://axelk2014.github.io/img/1024x745_Nov-Dec_2017-melbourne_Day-1_forecast_2018-01-13_chart.png){: .center-image } | 1024x745 PNG 114k|
 
 
 As you can see it was not until the 2 day forecast that the forecasted level of rain jumped significantly, and the day before wildly over-estimated rain levels.
