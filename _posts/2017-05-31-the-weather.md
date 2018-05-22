@@ -6,7 +6,7 @@ tags: weather visualisation bash R ggplot
 description: An investigation on the accuracy of BOM forecasts
 ---
 
-<i>Original post written 19/6/17</i>
+<i>Original post written 19/6/17</i><br>
 <i>Last updated: 2018-05-22</i>
 
 Work in progress.
@@ -34,7 +34,7 @@ However the chart only provides a limited understanding of how different (or ina
 ### Animations
 
 For each chart below:
-- Each animation shows the forecasted day range (thin coloured line counting down from 6 day forecast to 5 day forecast, etc.. until 1 day forecast.
+- Each animation shows the forecasted day range (thin coloured line counting down from 6 day forecast to 1 day forecast.
 - Long dashed line in blue showing the date of the maximum temperature range (actual)
 - Short dashed line (coloured by day) showing the date of the maximum temperature range (forecast)  
 
@@ -64,7 +64,7 @@ Using the same colour schemes above, for aesthetic reasons only, I created the f
 | Maximum | [![Total](https://axelk2014.github.io/img/total-maximum_tn.png)](https://axelk2014.github.io/img/total-maximum.png){: .center-image } | 1024x745 PNG 133k|
 | Minimum | [![Brisbane](https://axelk2014.github.io/img/total-minimum_tn.png)](https://axelk2014.github.io/img/total-minimum.png){: .center-image } | 1024x745 PNG 128k|
 
-***Note on colours***
+### Note on colours***
 
 With comparative boxplots, the primary interest is the thick "median" line. When you reverse the colours and the boxplot is drawn with white lines on a darker background, the 'contrast' seems less than dark lines on a lighter background.
 
