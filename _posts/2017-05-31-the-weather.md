@@ -6,14 +6,14 @@ tags: weather visualisation bash R ggplot
 description: An investigation on the accuracy of BOM forecasts
 ---
 
-<i>Original post written 19/6/17</i><br>
+<i>Original post written 2017-06-19</i><br>
 <i>Last updated: 2018-05-22</i>
 
 Work in progress.
 
-To answer the question: How accurate is the weather forecast 6 days out?
+### To answer the question: How accurate is the weather forecast 6 days out?
 
-**Method:** Scrape the 6 day forecast from bom.gov.au every day for a period of time then compare with actuals (also downloaded from the BOM) to see how accurate their forecast is.
+#### Method: Scrape the 6 day forecast from bom.gov.au every day for a period of time then compare with actuals (also downloaded from the BOM) to see how accurate their forecast is.
 
 <br>
 
@@ -64,7 +64,7 @@ Using the same colour schemes above, for aesthetic reasons only, I created the f
 | Maximum | [![Total](https://axelk2014.github.io/img/total-maximum_tn.png)](https://axelk2014.github.io/img/total-maximum.png){: .center-image } | 1024x745 PNG 133k|
 | Minimum | [![Brisbane](https://axelk2014.github.io/img/total-minimum_tn.png)](https://axelk2014.github.io/img/total-minimum.png){: .center-image } | 1024x745 PNG 128k|
 
-### Note on colours***
+### Note on colours
 
 With comparative boxplots, the primary interest is the thick "median" line. When you reverse the colours and the boxplot is drawn with white lines on a darker background, the 'contrast' seems less than dark lines on a lighter background.
 
