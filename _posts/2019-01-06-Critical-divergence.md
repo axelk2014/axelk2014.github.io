@@ -12,7 +12,7 @@ Metacritic ([https://www.metacritic.com/](https://www.metacritic.com/)), is unli
 
 <blockquote cite="https://www.kotaku.com.au/2013/04/metacritic-matters-how-review-scores-hurt-video-games/">
 "In other words, a developer’s priority is sometimes not just to make a good game, but to make a game that they think will resonate with reviewers."<br>
--- <i><a href:"https://www.kotaku.com.au/2013/04/metacritic-matters-how-review-scores-hurt-video-games/"> www.kotaku.com.au/2013/04/metacritic-matters-how-review-scores-hurt-video-games/)</i></a></blockquote>
+-- <i><a href="https://www.kotaku.com.au/2013/04/metacritic-matters-how-review-scores-hurt-video-games/"> www.kotaku.com.au/2013/04/metacritic-matters-how-review-scores-hurt-video-games/)</i></a></blockquote>
 <br>
 There is therefore significant incentive in the industry to "game" (pun intended) the system. However trying to measure the extent to which developers would change a game for Metacritic scores would be impossible for various reasons, namely access to the relevant data like publishing contracts, bonuses, etc...
 
@@ -39,7 +39,7 @@ Relevant fields:
 To show the relationship between two variables, the review scores are plotted in a jointplot, with the metascore on the x-axis and the related userscore on the y-axis, we can compare the shape of the score distributions.
 
 ![MetascorevsUserscore]({{ site.baseurl | prepend:site.url}}/img/424x424_meta_vs_user.png){: .center-image }
-<b>Figure 1: </b> Jointplot metascore vs userscore [424x424 81K]
+<br><b>Figure 1: </b> Jointplot metascore vs userscore [424x424 81K]
 
 Pearson's correlation coefficient (or *<i>Pearson's r</i>*) shows a weak correlation between both review scores (a score closer to 1 or -1 would show a stronger correlation).
 
@@ -73,7 +73,7 @@ Therefore the metascore (critics score) is not a good predictor of userscore.
 
 Let's examine the distribution of each score individually:
 
-![FrequencyBoxplots]({{ site.baseurl | prepend:site.url}}/img/525x383_boxplots.png){: .center-image } <b>Figure 2: </b>Distribution of metascore and userscore [525x383 57K]
+![FrequencyBoxplots]({{ site.baseurl | prepend:site.url}}/img/525x383_boxplots.png){: .center-image } <br><b>Figure 2: </b>Distribution of metascore and userscore [525x383 57K]
 
 We see there is minor differences in min/max/median values.
 
@@ -98,7 +98,7 @@ qqPlot(df.metacritic$userscore)
 
 we get the following plots:
 
-![QQplot_metascore]({{ site.baseurl | prepend:site.url}}/img/525x383_metascore_qqPlot.png){: .center-image } <b>Figure 4: </b> QQ plot of metascore distribution [525x383 33K]
+![QQplot_metascore]({{ site.baseurl | prepend:site.url}}/img/525x383_metascore_qqPlot.png){: .center-image } <br><b>Figure 4: </b> QQ plot of metascore distribution [525x383 33K]
 
 ![QQplot_userscore]({{ site.baseurl | prepend:site.url}}/img/525x383_userscore_qqPlot.png){: .center-image } <br><b>Figure 5: </b> QQ plot of userscore distribution [525x383 29K]
 
@@ -140,7 +140,8 @@ Assuming a 5% significance level, in all cases above <b>p<&#945;</b> is False, t
 
 The final test we carry out is a two-sample [Kolmogorov-Smirnov](http://www.physics.csbsju.edu/stats/KS-test.html) test. This statistic tests the following null hypothesis:<br>
 <center><i>H</i><sub>0</sub>: Both samples are taken from the same distribution.</center>
-
+<br>
+<br>
 The results:
 
 ```
@@ -151,8 +152,7 @@ D = 0.034772, p-value = 1.021e-13
 alternative hypothesis: two-sided
 ```
 
-Again, we see that since at p=0.05 the following statement is False: <br>
-<b> p<&#945; </b>, therefore we can reject the null hypothesis that both samples are drawn from the same distribution.
+Again, we see that since at p=0.05, <b> p<&#945; </b>is False, therefore we can reject the null hypothesis that both samples are drawn from the same distribution.
 
 ### Insights
 1. The jointplot shows similar distributions around scores and a weak correlation.
@@ -172,7 +172,7 @@ The take-away from the final insight was a surprise - since the assumption is th
 <br>
 
 
-#### Further research:
+### Further research:
 - Sentiment analysis of metacritic user reviews comparing to critic reviews to measure how much scores diverge
 - add available data on developer incentives for games (likely very hard to source)
 <br>
