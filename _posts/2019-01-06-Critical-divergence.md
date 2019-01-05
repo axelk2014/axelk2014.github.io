@@ -8,24 +8,27 @@ description: How much power do review sites hold?
 
 # Introduction
 
-Metacritic (https://www.metacritic.com/), is unlike other review site in that the power it seems to hold over the video games industry. Major game developers will often tie in developer bonuses based on achieving a desired Metacritic score. Wall Street analysts use Metacritic scores as a guide to how well a game will perform as the scores are often published before the release date (https://en.wikipedia.org/wiki/Metacritic)
+Metacritic ([https://www.metacritic.com/](https://www.metacritic.com/)), is unlike other review site in that the power it seems to hold over the video games industry. Major game developers will often tie in developer bonuses based on achieving a desired Metacritic score. Wall Street analysts use Metacritic scores as a guide to how well a game will perform as the scores are often published before the release date ([https://en.wikipedia.org/wiki/Metacritic](https://en.wikipedia.org/wiki/Metacritic))
 
+<blockquote cite="https://www.kotaku.com.au/2013/04/metacritic-matters-how-review-scores-hurt-video-games/">
 "In other words, a developer’s priority is sometimes not just to make a good game, but to make a game that they think will resonate with reviewers."
-https://www.kotaku.com.au/2013/04/metacritic-matters-how-review-scores-hurt-video-games/
+-- <i>[https://www.kotaku.com.au/2013/04/metacritic-matters-how-review-scores-hurt-video-games/](https://www.kotaku.com.au/2013/04/metacritic-matters-how-review-scores-hurt-video-games/)</i></blockquote>
 
 There is therefore significant incentive in the industry to "game" (pun intended) the system. However trying to measure the extent to which developers would change a game for Metacritic scores would be impossible for various reasons, namely access to the relevant data like publishing contracts, bonuses, etc...
 
 ## Question: By examining solely the Metacritic stats quantitatively, could we show any irregularities between user review scores and critic review scores?
-
+<br>
 ### Scope
 
-Using only at the following dataset sourced from Kaggle [www.kaggle.com/destring/metacritic-reviewed-games-since-2000](https://www.kaggle.com/destring/metacritic-reviewed-games-since-2000), what insights can we get from the review scores, comparing principally the metacritic score (as scored by 'professional' game journalists) vs the userscore (from general users)
+Using only at the following dataset sourced from Kaggle ([www.kaggle.com/destring/metacritic-reviewed-games-since-2000](https://www.kaggle.com/destring/metacritic-reviewed-games-since-2000)), what insights can we get from the review scores, comparing principally the metacritic score (as scored by 'professional' game journalists) vs the userscore (from general users)
 
 ### Description of dataset
 
-<b>Metascore</b>: number, range 0-100, score given by critic <br>
-<b>Userscore</b>: number, transformed into range 0-100 (original data range from 0-10), score given by users<br>
-<b>Genre</b>: character, type of game genre
+Relevant fields:
+
+- <b>Metascore</b>: number, range 0-100, score given by critic <br>
+- <b>Userscore</b>: number, transformed into range 0-100 (original data range from 0-10), score given by users<br>
+- <b>Genre</b>: character, type of game genre
 
 ### Hypotheses
 - If the assignment of score is truly random, the distributions of the metascore and userscore will be similar
@@ -35,7 +38,7 @@ Using only at the following dataset sourced from Kaggle [www.kaggle.com/destring
 
 To show the relationship between two variables, the review scores are plotted in a jointplot, with the metascore on the x-axis and the related userscore on the y-axis, we can compare the shape of the score distributions.
 
-![MetascorevsUserscore]({{ site.baseurl | prepend:site.url}}/img/424x424_meta_vs_user.png){: .center-image }<br><b>Figure 1: </b> Jointplot metascore vs userscore [424x424 81K]
+![MetascorevsUserscore]({{ site.baseurl | prepend:site.url}}/img/424x424_meta_vs_user.png){: .center-image }<b>Figure 1: </b> Jointplot metascore vs userscore [424x424 81K]
 
 Pearson's correlation coefficient (or *<i>Pearson's r</i>*) shows a weak correlation between both review scores (a score closer to 1 or -1 would show a stronger correlation).
 
@@ -65,15 +68,17 @@ Sports         -0.831556
 Strategy       -1.366932
 ```
 
+Therefore the metascore (critics score) is not a good predictor of userscore.
+
 Let's examine the distribution of each score individually:
 
-![FrequencyBoxplots]({{ site.baseurl | prepend:site.url}}/img/525x383_boxplots.png){: .center-image } <br><b>Figure 2: </b>Distribution of metascore and userscore [525x383 57K]
+![FrequencyBoxplots]({{ site.baseurl | prepend:site.url}}/img/525x383_boxplots.png){: .center-image } <center><b>Figure 2: </b>Distribution of metascore and userscore [525x383 57K]</center>
 
 We see there is minor differences in min/max/median values.
 
 Plotted as a frequency histogram:
 
-![FrequencyHistograms]({{ site.baseurl | prepend:site.url}}/img/900x800_frequencyhistograms.png){: .center-image } <b>Figure 3: </b>Frequency Histograms of metascore and userscore with median, mean and skewness annotated [900x800 57K]
+![FrequencyHistograms]({{ site.baseurl | prepend:site.url}}/img/900x800_frequencyhistograms.png){: .center-image } <center> <b>Figure 3: </b>Frequency Histograms of metascore and userscore with median, mean and skewness annotated [900x800 57K] </center>
 
 The userscore is more left skewed, showing there are more lower scored user reviews than critic reviews. I felt that annotating the kurtosis would be an unnecessary addition to the visualisation without providing any further insight.
 
@@ -92,7 +97,7 @@ qqPlot(df.metacritic$userscore)
 
 we get the following plots:
 
-![QQplot_metascore]({{ site.baseurl | prepend:site.url}}/img/525x383_metascore_qqPlot.png){: .center-image } <br><b>Figure 4: </b> QQ plot of metascore distribution [525x383 33K]
+![QQplot_metascore]({{ site.baseurl | prepend:site.url}}/img/525x383_metascore_qqPlot.png){: .center-image } <center><b>Figure 4: </b> QQ plot of metascore distribution [525x383 33K]</center>
 
 ![QQplot_userscore]({{ site.baseurl | prepend:site.url}}/img/525x383_userscore_qqPlot.png){: .center-image } <br><b>Figure 5: </b> QQ plot of userscore distribution [525x383 29K]
 
@@ -148,13 +153,13 @@ alternative hypothesis: two-sided
 Again, we see that since at p=0.05 the following statement is False: <br>
 <b> p<&#945; </b>, therefore we can reject the null hypothesis that both samples are drawn from the same distribution.
 
-**Insights:**
+### Insights
 1. The jointplot shows similar distributions around scores and a weak correlation.
-1. The R-squared statistic, for the total dataset or grouped by genre, shows that the metascore is a weak predictor of userscore
+1. The R-squared statistic, for the total dataset or grouped by genre, shows that the metascore is a very weak predictor of userscore
 1. Both scores are not normal distributions
 1. Both scores are not drawn from the same distribution.
 
-The take-away from the final insight was a surprise - since the assumption is that the distribution of the critic scores and user review scores should follow a similar pattern if scores are assigned 'randomly' (with most reviews clustering around higher, more positive, scores) this would suggest further investigation would be required around Metacritic's scoring and weighting methodology.
+The take-away from the final insight was a surprise - since the assumption is that the distribution of the critic scores and user review scores should follow a similar pattern if scores are assigned 'randomly' (with most reviews clustering around higher, more positive, scores). Coupled with the very weak predictive power of the metascore variable to the userscore score, this would suggest further investigation around Metacritic's scoring and weighting methodology would be recommended.
 
 
 ### Links:
@@ -166,8 +171,9 @@ The take-away from the final insight was a surprise - since the assumption is th
 <br>
 
 
-### Further research:
+#### Further research:
 - Sentiment analysis of metacritic user reviews comparing to critic reviews to measure how much scores diverge
+- add available data on developer incentives for games (likely very hard to source)
 <br>
 <br>
 
