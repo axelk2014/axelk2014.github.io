@@ -12,7 +12,7 @@ Metacritic ([https://www.metacritic.com/](https://www.metacritic.com/)), is unli
 
 <blockquote cite="https://www.kotaku.com.au/2013/04/metacritic-matters-how-review-scores-hurt-video-games/">
 "In other words, a developer’s priority is sometimes not just to make a good game, but to make a game that they think will resonate with reviewers."<br>
--- <i><a href="https://www.kotaku.com.au/2013/04/metacritic-matters-how-review-scores-hurt-video-games/"> www.kotaku.com.au/2013/04/metacritic-matters-how-review-scores-hurt-video-games/)</i></a>
+-- <i><a href="https://www.kotaku.com.au/2013/04/metacritic-matters-how-review-scores-hurt-video-games/"> www.kotaku.com.au/2013/04/metacritic-matters-how-review-scores-hurt-video-games/)</a></i>
 </blockquote>
 <br>
 There is therefore significant incentive in the industry to "game" (pun intended) the system. However trying to measure the extent to which developers would change a game for Metacritic scores would be impossible for various reasons, namely access to the relevant data like publishing contracts, bonuses, etc...
