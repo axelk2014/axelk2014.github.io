@@ -15,7 +15,7 @@ https://www.kotaku.com.au/2013/04/metacritic-matters-how-review-scores-hurt-vide
 
 There is therefore significant incentive in the industry to "game" (pun intended) the system. However trying to measure the extent to which developers would change a game for Metacritic scores would be impossible for various reasons, namely access to the relevant data like publishing contracts, bonuses, etc...
 
-## By examining solely the Metacritic stats quantitatively, could we show any irregularities between user review scores and critic review scores?
+## Question: By examining solely the Metacritic stats quantitatively, could we show any irregularities between user review scores and critic review scores?
 
 ### Scope
 
@@ -23,19 +23,19 @@ Using only at the following dataset sourced from Kaggle [www.kaggle.com/destring
 
 ### Description of dataset
 
-**Metascore**: number, range 0-100, score given by critic
-**Userscore**: number, transformed into range 0-100 (original data range from 0-10), score given by users<br>
-**Genre**: character, type of game genre
+<b>Metascore</b>: number, range 0-100, score given by critic <br>
+<b>Userscore</b>: number, transformed into range 0-100 (original data range from 0-10), score given by users<br>
+<b>Genre</b>: character, type of game genre
 
-**Hypotheses:**
+### Hypotheses
 - If the assignment of score is truly random, the distributions of the metascore and userscore will be similar
 
-**Assumptions:**
+### Assumptions
 - If review scores are gamed in anyway, the shape of the distributions of scores will be different because the scores will not be truly random.
 
 To show the relationship between two variables, the review scores are plotted in a jointplot, with the metascore on the x-axis and the related userscore on the y-axis, we can compare the shape of the score distributions.
 
-![MetascorevsUserscore]({{ site.baseurl | prepend:site.url}}/img/424x424_meta_vs_user.png){: .center-image }<b>Figure 1: </b> Jointplot metascore vs userscore [424x424 81K]
+![MetascorevsUserscore]({{ site.baseurl | prepend:site.url}}/img/424x424_meta_vs_user.png){: .center-image }<br><b>Figure 1: </b> Jointplot metascore vs userscore [424x424 81K]
 
 Pearson's correlation coefficient (or *<i>Pearson's r</i>*) shows a weak correlation between both review scores (a score closer to 1 or -1 would show a stronger correlation).
 
@@ -67,7 +67,7 @@ Strategy       -1.366932
 
 Let's examine the distribution of each score individually:
 
-![FrequencyHistograms]({{ site.baseurl | prepend:site.url}}/img/525x383_boxplots.png){: .center-image } <b>Figure 2: </b>Distribution of metascore and userscore [525x383 57K]
+![FrequencyBoxplots]({{ site.baseurl | prepend:site.url}}/img/525x383_boxplots.png){: .center-image } <br><b>Figure 2: </b>Distribution of metascore and userscore [525x383 57K]
 
 We see there is minor differences in min/max/median values.
 
@@ -90,15 +90,15 @@ qqPlot(df.metacritic$metascore)
 qqPlot(df.metacritic$userscore)
 ```
 
-we get the following plots.
+we get the following plots:
 
-![QQplot_metascore]({{ site.baseurl | prepend:site.url}}/img/525x383_metascore_qqPlot.png){: .center-image } <b>Figure 4: </b> QQ plot of metascore distribution [525x383 33K]
+![QQplot_metascore]({{ site.baseurl | prepend:site.url}}/img/525x383_metascore_qqPlot.png){: .center-image } <br><b>Figure 4: </b> QQ plot of metascore distribution [525x383 33K]
 
-![QQplot_userscore]({{ site.baseurl | prepend:site.url}}/img/525x383_userscore_qqPlot.png){: .center-image } <b>Figure 5: </b> QQ plot of userscore distribution [525x383 29K]
+![QQplot_userscore]({{ site.baseurl | prepend:site.url}}/img/525x383_userscore_qqPlot.png){: .center-image } <br><b>Figure 5: </b> QQ plot of userscore distribution [525x383 29K]
 
 The blue line shows where the distribution of points would be if it was a normal curve, so we can safely say neither metascore or userscore are normal distributions.
 
-To further confirm, we can run a Shapiro-Wilk normality test and/or an Anderson-Darling normality test. There are pros and cons to each approach, and I've approached this by using both to help validate the result:
+To further confirm, we can run a Shapiro-Wilk normality test and/or an Anderson-Darling normality test. There are pros and cons to each statistic, and I've approached this by using both to help validate the result:
 
 ```
 > shapiro.test(metascores)
@@ -130,10 +130,10 @@ data:  userscores
 A = 93.681, p-value < 2.2e-16
 ```
 
-Assuming a 5% significance level, in all cases above p<&#945; is False, therefore we can reject the null hypothesis that the distributions are normal.
+Assuming a 5% significance level, in all cases above <b>p<&#945;</b> is False, therefore we can reject the null hypothesis that the distributions are normal.
 
-The final test we carry out is a two-sample Kolmogorov-Smirnov test. This statistic tests the following null hypothesis:<br>
-<i>H</i><sub>0</sub>: Both samples are taken from the same distribution.
+The final test we carry out is a two-sample [Kolmogorov-Smirnov](http://www.physics.csbsju.edu/stats/KS-test.html) test. This statistic tests the following null hypothesis:<br>
+<center><i>H</i><sub>0</sub>: Both samples are taken from the same distribution.</center>
 
 The results:
 
@@ -145,7 +145,8 @@ D = 0.034772, p-value = 1.021e-13
 alternative hypothesis: two-sided
 ```
 
-Again, we see that since at p=0.05 the following statement is False:  p<&#945;, therefore we can reject the null hypothesis that both samples are drawn from the same distribution.
+Again, we see that since at p=0.05 the following statement is False: <br>
+<b> p<&#945; </b>, therefore we can reject the null hypothesis that both samples are drawn from the same distribution.
 
 **Insights:**
 1. The jointplot shows similar distributions around scores and a weak correlation.
@@ -160,7 +161,7 @@ The take-away from the final insight was a surprise - since the assumption is th
 - link to repository for all source code used to generate plots and statistics: https://github.com/axelk2014/critical-divergence
 - Reverse engineered Metacritic weighting [https://www.ign.com/boards/threads/metacritics-weighting-scale-revealed-warning-controversy-inside.452936591/](https://www.ign.com/boards/threads/metacritics-weighting-scale-revealed-warning-controversy-inside.452936591/)
 - [www.kotaku.com.au/2013/04/metacritic-matters-how-review-scores-hurt-video-games/](https://www.kotaku.com.au/2013/04/metacritic-matters-how-review-scores-hurt-video-games/)
--
+
 <br>
 <br>
 
