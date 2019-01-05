@@ -11,9 +11,9 @@ description: How much power do review sites hold?
 Metacritic ([https://www.metacritic.com/](https://www.metacritic.com/)), is unlike other review site in that the power it seems to hold over the video games industry. Major game developers will often tie in developer bonuses based on achieving a desired Metacritic score. Wall Street analysts use Metacritic scores as a guide to how well a game will perform as the scores are often published before the release date ([https://en.wikipedia.org/wiki/Metacritic](https://en.wikipedia.org/wiki/Metacritic))
 
 <blockquote cite="https://www.kotaku.com.au/2013/04/metacritic-matters-how-review-scores-hurt-video-games/">
-"In other words, a developer’s priority is sometimes not just to make a good game, but to make a game that they think will resonate with reviewers."
--- <i>[https://www.kotaku.com.au/2013/04/metacritic-matters-how-review-scores-hurt-video-games/](https://www.kotaku.com.au/2013/04/metacritic-matters-how-review-scores-hurt-video-games/)</i></blockquote>
-
+"In other words, a developer’s priority is sometimes not just to make a good game, but to make a game that they think will resonate with reviewers."<br>
+-- <i><a href:"https://www.kotaku.com.au/2013/04/metacritic-matters-how-review-scores-hurt-video-games/"> www.kotaku.com.au/2013/04/metacritic-matters-how-review-scores-hurt-video-games/)</i></a></blockquote>
+<br>
 There is therefore significant incentive in the industry to "game" (pun intended) the system. However trying to measure the extent to which developers would change a game for Metacritic scores would be impossible for various reasons, namely access to the relevant data like publishing contracts, bonuses, etc...
 
 ## Question: By examining solely the Metacritic stats quantitatively, could we show any irregularities between user review scores and critic review scores?
@@ -38,7 +38,8 @@ Relevant fields:
 
 To show the relationship between two variables, the review scores are plotted in a jointplot, with the metascore on the x-axis and the related userscore on the y-axis, we can compare the shape of the score distributions.
 
-![MetascorevsUserscore]({{ site.baseurl | prepend:site.url}}/img/424x424_meta_vs_user.png){: .center-image }<b>Figure 1: </b> Jointplot metascore vs userscore [424x424 81K]
+![MetascorevsUserscore]({{ site.baseurl | prepend:site.url}}/img/424x424_meta_vs_user.png){: .center-image }
+<b>Figure 1: </b> Jointplot metascore vs userscore [424x424 81K]
 
 Pearson's correlation coefficient (or *<i>Pearson's r</i>*) shows a weak correlation between both review scores (a score closer to 1 or -1 would show a stronger correlation).
 
@@ -72,13 +73,13 @@ Therefore the metascore (critics score) is not a good predictor of userscore.
 
 Let's examine the distribution of each score individually:
 
-![FrequencyBoxplots]({{ site.baseurl | prepend:site.url}}/img/525x383_boxplots.png){: .center-image } <center><b>Figure 2: </b>Distribution of metascore and userscore [525x383 57K]</center>
+![FrequencyBoxplots]({{ site.baseurl | prepend:site.url}}/img/525x383_boxplots.png){: .center-image } <b>Figure 2: </b>Distribution of metascore and userscore [525x383 57K]
 
 We see there is minor differences in min/max/median values.
 
 Plotted as a frequency histogram:
 
-![FrequencyHistograms]({{ site.baseurl | prepend:site.url}}/img/900x800_frequencyhistograms.png){: .center-image } <center> <b>Figure 3: </b>Frequency Histograms of metascore and userscore with median, mean and skewness annotated [900x800 57K] </center>
+![FrequencyHistograms]({{ site.baseurl | prepend:site.url}}/img/900x800_frequencyhistograms.png){: .center-image } <b>Figure 3: </b>Frequency Histograms of metascore and userscore with median, mean and skewness annotated [900x800 57K]
 
 The userscore is more left skewed, showing there are more lower scored user reviews than critic reviews. I felt that annotating the kurtosis would be an unnecessary addition to the visualisation without providing any further insight.
 
@@ -97,7 +98,7 @@ qqPlot(df.metacritic$userscore)
 
 we get the following plots:
 
-![QQplot_metascore]({{ site.baseurl | prepend:site.url}}/img/525x383_metascore_qqPlot.png){: .center-image } <center><b>Figure 4: </b> QQ plot of metascore distribution [525x383 33K]</center>
+![QQplot_metascore]({{ site.baseurl | prepend:site.url}}/img/525x383_metascore_qqPlot.png){: .center-image } <b>Figure 4: </b> QQ plot of metascore distribution [525x383 33K]
 
 ![QQplot_userscore]({{ site.baseurl | prepend:site.url}}/img/525x383_userscore_qqPlot.png){: .center-image } <br><b>Figure 5: </b> QQ plot of userscore distribution [525x383 29K]
 
